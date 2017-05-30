@@ -1,0 +1,66 @@
+
+#addHorseForm {
+    height: 100%;
+    margin: 0 auto;
+}
+#addHorseForm input[type=text] :first-child {
+margin-top: 70px;
+
+
+}
+
+
+#addHorseForm input[type=text]  {;
+    margin: 0 auto;
+    width: 75%;
+    height: 15%;
+    border: 1px solid black;
+    box-shadow:2px 2px 5px 2px #e3e3e3 ;
+    border-radius:15px 15px 15px 15px;
+    padding: 1em;
+     display: block;
+    text-align: center;
+
+ }
+#sex-buttons {
+    display: block;
+    margin: 0 auto;
+    height: 25%;
+    width: 100%;
+    margin-top: 47px;
+
+
+}
+
+
+#sex-buttons .sex {
+    box-shadow:2px 4px 5px 2px #e3e3e3 ;
+    width: 15%;
+    height: 15%;
+    background-color: #4CAF50; /* Green */
+    border: 0.7px solid green;
+    color: white;
+    padding: 0.5em 0.2em 0.5em 0.2em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2.5em;
+    cursor: pointer;
+    float: left;
+    margin: 35px 55px 45px 95px;
+   border-radius: 55px 55px 55px 55px;
+
+}
+.sex:first-child {
+    border-radius-topleft: 10px;
+}
+
+#sex-buttons .sex:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+#sex-buttons .sex:hover {
+    background-color: #3e8e41;
+}
+
+
+/* hästens ålder namn inrikting och placeholder */

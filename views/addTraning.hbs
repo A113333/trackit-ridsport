@@ -1,0 +1,51 @@
+
+<div id ="addTraningForm">
+<form>
+    {{#each criterias}}
+
+
+    <fieldset class="oneToFive">
+        <legend> {{this}}</legend>
+       <p>1</p> <p> 2 </p> <p> 3</p> <p> 4</p> <p> 5 </p> <br>
+        <input type="radio"  name="{{this}}" value="1" checked>
+        <input type="radio" name="{{this}}" value="2">
+        <input type="radio" name="{{this}}" value="3">
+        <input type="radio" name="{{this}}" value="4">
+        <input type="radio" name="{{this}}" value="5">
+
+    </fieldset>
+
+
+
+
+    {{/each}}
+
+    <button class="submitTraningBtn" type="submit" formmethod="post" formaction="/addTraning">OK</button>
+
+</form>
+
+
+
+
+    <form action="/addTraning" method="post">
+        <fieldset>
+            <legend> För Styling</legend>
+            1 2 3 4 5<br>
+            <input type="radio" name="test" value="1" checked>
+            <input type="radio" name="test" value="2">
+            <input type="radio" name="test" value="3">
+            <input type="radio" name="test" value="4">
+            <input type="radio" name="test}" value="5">
+            <input type="submit">
+        </fieldset>
+    </form>
+
+
+
+</div>
+
+
+
+
+
+

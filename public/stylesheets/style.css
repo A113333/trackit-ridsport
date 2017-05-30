@@ -1,0 +1,19 @@
+.container {
+    width: 960px;
+    margin: 0 auto;
+
+
+    -webkit-box-shadow:0px 0px 24px 12px #e3e3e3 ;
+    -moz-box-shadow:0px 0px 24px 12px #e3e3e3 ;
+    box-shadow:0px 0px 24px 12px #e3e3e3 ;
+
+    border-radius:15px 15px 15px 15px;
+    -moz-border-radius:15px 15px 15px 15px;
+    -webkit-border-radius:15px 15px 15px 15px;
+
+}
+
+body {
+
+
+}
