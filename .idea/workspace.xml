@@ -126,7 +126,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="indexRoutes.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="indexRoutes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pt folder/routes/indexRoutes.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
@@ -136,11 +136,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pt folder/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+            <state relative-caret-position="17">
+              <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -167,7 +167,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Min st</find>
       <find>appe</find>
       <find>login</find>
       <find>plan</find>
@@ -197,6 +196,7 @@
       <find>showAddToUser</find>
       <find>scri</find>
       <find>script</find>
+      <find>addHorse</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -255,8 +255,8 @@
         <option value="$PROJECT_DIR$/pt folder/routes/usersRoutes.js" />
         <option value="$PROJECT_DIR$/pt folder/public/javascripts/print.js" />
         <option value="$PROJECT_DIR$/pt folder/public/javascripts/btns/addHorseBtn.js" />
-        <option value="$PROJECT_DIR$/pt folder/.gitignore" />
         <option value="$PROJECT_DIR$/pt folder/routes/indexRoutes.js" />
+        <option value="$PROJECT_DIR$/pt folder/.gitignore" />
       </list>
     </option>
   </component>
@@ -845,12 +845,12 @@
       <workItem from="1500367727255" duration="30009000" />
       <workItem from="1501601398635" duration="46503000" />
       <workItem from="1502632984660" duration="16952000" />
-      <workItem from="1502709156904" duration="148119000" />
+      <workItem from="1502709156904" duration="148243000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="627376000" />
+    <option name="totallyTimeSpent" value="627500000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1332,14 +1332,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pt folder/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pt folder/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
@@ -1352,6 +1344,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pt folder/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
           <folding />
         </state>
       </provider>
