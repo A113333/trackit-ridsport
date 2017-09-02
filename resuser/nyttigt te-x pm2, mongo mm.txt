@@ -1,0 +1,7 @@
+pm2 restart  = startar om
+pm2 start app.js = startar app
+pm2 logs = visar loggar
+pm2 monit = visar anvädningen
+
+
+DEBUG=express:* node app.js utförliga loggar
