@@ -23,12 +23,9 @@ router.isLoggedIn = function isLoggedIn(req, res, next) {
   return next();
   };
 
-router.get('/', function (req, res, next) {
 
-    res.render('index.hbs');
-  });
 
-router.get("/ridsport", function(req, res, next) {
+router.get("/", function(req, res, next) {
 
   res.render("main", { title: 'my other page', layout: 'landingPage' })
 });
