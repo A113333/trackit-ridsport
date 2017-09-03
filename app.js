@@ -7,9 +7,10 @@ var logger = require('morgan');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var flash    = require('connect-flash');
-
+const session = require('express-session')
+const RedisStore = require('connect-redis')(session);
 //loading process env
-process.env.NODE_ENV = process.env.NODE_ENV || "development";
+process.env.NODE_ENV = "production";
 
 
 
@@ -56,11 +57,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //var csrfProtection = csrf({ cookie: true });
 app.use(cookieParser());
 
-app.use(require('express-session')({
-    secret: 'allespt',
-    resave: false,
-    saveUninitialized: false
-}));
+
+
 
 
 app.use(passport.initialize());
