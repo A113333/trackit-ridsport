@@ -7,7 +7,7 @@ var logger = require('morgan');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var flash    = require('connect-flash');
-const session = require('express-session')
+const session = require('express-session');
 const RedisStore = require('connect-redis')(session);
 //loading process env
 process.env.NODE_ENV = "production";

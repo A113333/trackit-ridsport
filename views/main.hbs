@@ -66,6 +66,27 @@
 <!-- =========================
     START ABOUT US SECTION
 ============================== -->
+
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '1909049156018200',
+            xfbml      : true,
+            version    : 'v2.10'
+        });
+        FB.AppEvents.logPageView();
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
 <section class="header parallax home-parallax page" id="HOME">
     <h2></h2>
     <div class="section_overlay">
@@ -448,7 +469,7 @@
             <div class="col-md-9">
                 <p>Vill du komma igång med Track it direkt? Tryck då bara på logga in nedan!</p>
                 <div id="logginFacebook" class="loginIndex">
-                    <a href="/auth/facebook/callback" role="button"> <img src="./images/lib/icons/facebook.png" class="indexFbIcon"></a>
+                    <a href="/auth/facebook/" role="button"> <img src="./images/lib/icons/facebook.png" class="indexFbIcon"></a>
                     <i class="fa fa-sign-in fa" aria-hidden="true"></i>
                 </div>
             </div>
@@ -581,7 +602,18 @@
                         Gillar du appen så rekommenderar jag dig även att trycka på trycka på "spara till hemskärm" som spara ett bokmärke på din hemskärm, som tar dig direkt
                         till ditt konto, men glöm inte att kika in här då och då då vi kommer presentera mycket spännande nyheter och kommande funktionalitet löpande här!
 
+                    <div
+                            class="fb-like"
+                            data-share="true"
+                            data-width="450"
+                            data-show-faces="true">
+                    </div>
 
+
+
+                    <div class="fb-login-button" data-max-rows="1" data-size="medium"
+                         data-button-type="login_with" data-show-faces="true" data-auto-logout-link="false"
+                         data-use-continue-as="true"> test </div>
 
 
                     <p>Tryck på ikonen nedan för att logga in!</p>
