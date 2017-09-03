@@ -1,0 +1,89 @@
+
+<div id="addLoggContainer">
+    <div id="loggTitle">
+
+    </div>
+
+    <input type="text" class="hidden" id="_id" value="{{this.event._id}}">
+    <form id="addLoggFrom">
+        <div class="selectHorseContainer">
+        <select class="select" id="horseName"  name="horseName">
+            <option value="{{this.event.horse}}" selected>{{this.event.horse}}</option>
+            {{#each this.user.horses}}
+                <option>{{this.name}}</option>
+            {{/each}}
+        </select>
+        </div>
+
+        <div class="selectTypeOfTraningContainer">
+        <select class="select" id="typeOfTraning"  name="typeOfTraning">
+            <option value="{{this.event.type}}" selected>{{this.event.type}}</option>
+            {{#each this.user.typesOfTraning}}
+                <option>{{this.name}}</option>
+            {{/each}}
+        </select>
+        </div>
+
+
+        <div id="crittsContainer">
+
+            <span id="crittHeaderSpan"> Bedömningspunkter </span>
+
+
+            <div id="scores"  class="scores">
+
+                {{#each this.event.critts}}
+                <p class="rangeLable"><strong> {{this}} </strong></p>
+                    <input type="range" max="10" step="1" value="5"  id="score{{@index}}" name="{{this}}">
+                    <output> </output>
+                {{/each}}
+            </div>
+
+        </div>
+
+
+
+        <div id="rangeSliders">
+
+            <p class="rangeLable"><strong> Träningens  intensitet/Hur ansträngande skall passet vara? </strong></p>
+            <div id="intContatiner"> <p class="easy">Lätt</p><p class="medium">Medel</p><p class="hard">Hårt</p> </div>
+            <input type="range" max="100" step="1" value="50" id="intensitet" name="intensitet">
+
+
+            <p class="rangeLable"><strong> Träningens längd: </strong></p>
+            <input type="range" max="180" step="5" value="60" id="lenght" name="lenght">
+            <div class="rangeMinContainer">
+                <output> </output> <span> Minuter</span>
+            </div>
+
+        </div>
+
+
+        <textarea id="planComments" placeholder="Skriv ev kommentarer till din logg här" onfocus="this.placeholder = ''"
+                  onblur="this.placeholder = 'Skriv ev kommentarer till din logg här   '"/>
+        </textarea>
+
+    </form>
+
+<button  type="button" class="btn back">
+    Tillbaka till kalendern
+</button>
+<button  type="button"class="btn postLoggBtn md-trigger md-setperspective">
+    Gå vidare
+</button>
+
+
+
+
+<!--{{#each this.user}}-->
+    <!--{{this}}-->
+
+<!--{{/each}}-->
+
+<!--<br>-->
+<!--Event:-->
+<!--{{#each this.event}}-->
+    <!--{{this}}-->
+<!--{{/each}}-->
+
+

@@ -1,0 +1,53 @@
+/* line 3, ../../../sass/partials/addPlan.scss */
+#crittHeader {
+  text-align: center;
+  padding-top: 20px;
+  height: 32px;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 0.8em;
+}
+
+/* line 13, ../../../sass/partials/addPlan.scss */
+#crittHeaderSpan {
+  font-weight: bolder;
+  height: 64px;
+  font-size: 2em;
+  padding-bottom: 15px;
+  /* text-align: center; */
+}
+
+/* line 22, ../../../sass/partials/addPlan.scss */
+#crittsContainer {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0 10px 0;
+  padding: 10px;
+  background-color: rgba(234, 229, 213, 0.28);
+  border: 1px solid rgba(217, 203, 203, 0.18);
+  box-shadow: -1px -4px 20px rgba(201, 205, 143, 0.23);
+}
+
+/* line 32, ../../../sass/partials/addPlan.scss */
+p.rangeLable {
+  padding: 20px;
+  margin: auto;
+  display: block;
+  text-align: center;
+  font-weight: 900;
+}
+
+/* line 40, ../../../sass/partials/addPlan.scss */
+div#rangeSliders {
+  padding: 12px;
+}
+
+/* line 44, ../../../sass/partials/addPlan.scss */
+#rangeSliders {
+  display: block;
+  padding: 15px;
+  background-color: rgba(102, 102, 102, 0.58);
+  color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}

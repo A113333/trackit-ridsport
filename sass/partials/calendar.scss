@@ -1,0 +1,305 @@
+@import "./base";
+
+#mainCal{
+  margin-top: 10px;
+  background-color:$background-greyColor;;
+
+
+}
+.calendar{
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto ;
+
+
+}
+
+// calender header
+.controls{
+  color: white;
+  font-size: 1.5em;
+  background-color: rgba(26, 26, 26, 0.36);
+  text-align: center;
+  // border-color: darken( $white-color, 10% );
+ // background-color: darken( $white-color, 1% );
+
+
+
+  text-align: center;
+
+  .month{
+    padding: 12px 0;
+    text-align: center;
+  }
+  .year{}
+
+  .clndr-previous-button{
+    margin-left: 5%;
+    color: #d7cfff;
+    float: left;
+  }
+  .clndr-next-button{
+    margin-right: 5%;
+    color: #d7cfff;
+    float: right;
+  }
+
+  .clndr-today-button{
+
+
+  }
+}
+
+
+
+
+.clndr-grid {
+  .days-of-the-week {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+  .headers {
+
+
+    .day-header {
+      background-color: rgb(242, 155, 18);
+      text-align: center;
+      float: left;
+      font-size: 0.5em;
+      font-weight: 900;
+      width: (100% / 7);
+
+    }
+
+    border-bottom: $clndr-border;
+  }
+
+
+
+
+.day
+{
+  font-weight: 900;
+  color: white;
+  background-color: rgba(213, 213, 213, 0.28);
+  border-color: rgba(89, 89, 89, 0.1);
+  border-bottom: 1px solid rgba(89, 89, 89, 0.1);
+  width: 14.28571%;
+  float: left;
+  position: relative;
+  text-align: center;
+  height: inherit;
+  font-size: 0.5em;
+  p{
+    padding: 6px;
+  }
+
+  &:hover { background: #eee; }
+
+  &.past, &.p{
+
+                color: darken( $white-color, 90% );
+
+  }
+
+  &.today, &.my-today
+  {
+
+    p {
+      .day.today p, .day.my-today p {
+        /* background-color: #ff0e3b; */
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 9px;
+        margin-top: 9px;
+        width: 36%;
+        height: 50%;
+        color: #f29b12;
+        margin-right: auto;
+        font-weight: bolder;
+        margin-left: auto;
+        /* padding: 5px; */
+        border: 2px solid $blue-color;
+        padding-top: 8px;
+      }
+    }
+
+
+    &:hover { }
+    &.event
+    {
+
+    }
+  }
+
+  &.event, &.my-event
+  {
+
+    &:hover
+    {
+
+    }
+  }
+
+  &.inactive, &.my-inactive
+  {
+
+  }
+
+  &:last-child
+  {
+
+  }
+
+  .day-contents
+  {
+  text-align: right;
+  }
+}
+
+.empty, .adjacent-month, .my-empty, .my-adjacent-month
+{
+
+  border-bottom: $clndr-border;
+
+
+  &:hover { background: #ddd; }
+
+  &:last-child
+  {
+
+  }
+}
+
+:last-child
+{
+  .day, .my-day
+  {
+    border-bottom: $clndr-border;
+  }
+
+  .empty, .my-empty
+  {
+    border-bottom: $clndr-border;
+  }
+}
+
+
+
+.event-indicator{
+  background-color: #3BB7E8;
+  border-radius: 100%;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 15px;
+
+  &.adjacent-month, &.inactive{
+    opacity: 0.3;
+  }
+}
+
+.clickedDate {
+  p {
+    padding-top: 7px;
+    padding-right: 5px;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 36%;
+    height: 50%;
+    color: rgb(242, 155, 18);
+    margin-right: auto;
+    font-weight: bolder;
+    margin-left: auto;
+    /* padding: 5px; */
+     border: 1px solid transparent;
+    border-radius: 100%;
+  }
+}
+
+.day.today {
+  background-color: white;
+  color: black;
+}
+
+.day.event{
+background-color: rgba(96, 158, 100, 0.58);
+}
+
+#eventInfo{
+  clear: both;
+  background-color: rgba(211, 211, 211, 0.59);
+}
+#plansAndLoggContainer {
+  padding-bottom: 20px;
+  background-color: $background-greyColor;
+  margin-top: 5px;
+}
+.planCardHeader{
+  text-align: center;
+  background-color: rgba(223, 223, 223, 0.32);
+  padding: 10px;
+}
+
+p.cardHeaderHeadline{
+  font-weight: bolder;
+  text-decoration-line: underline;
+}
+
+.loggCardCal {
+  overflow: hidden;
+  /* display: inline-block; */
+  width: 80%;
+  margin: auto;
+  padding-bottom: 10px;
+  /* padding-top: 10px; */
+  margin-bottom: 10px;
+  clear: both;
+  border-radius: 10px;
+  background-color: white;
+  display: block;
+  box-shadow: 7px 9px 20px rgba(255, 255, 255, 0.33);
+  margin-top: 10px;
+  /* margin-top: 135px; */
+  margin-top: 10px;
+  p {
+    padding: 1px;
+    margin: 3px;
+  }
+  /* margin-top: 135px; */
+}
+.pushForward {position: relative;}
+.pushForward:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.planCard{
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.78);
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  clear: both;
+
+  p{
+    margin: 0;
+    padding: 10px 0 0 0;
+    margin: 5px 0 5px 0;
+  }
+}
+

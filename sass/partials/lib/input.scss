@@ -1,0 +1,144 @@
+@import "../../partials/base";
+
+input[type="text"]{
+  width: 100%;
+  font-size: 2em;
+}
+
+.select {
+  width: 95%;
+  margin: auto;
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+#addCritt{
+  height: 64px;
+  text-align: center;
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+#addCrittIcon{
+float: right;
+padding-right: 10px;
+}
+
+
+#deleteOneCritt{
+  float: left;
+  height: 64px;
+  text-align: center;
+display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+#removeCrittIcon{ z-index: 10;
+  padding-left: 10px;
+  float: left}
+
+.intensitiLabel{
+  width: 100%;
+}
+#intContatiner{
+  text-align: center;
+  .easy{
+    float: left;
+    padding-left: 20px;
+  }
+  .hard{float: right;
+    padding-right: 20px;}
+}
+
+
+
+#intensitetValues{
+
+  display: inline-block;
+
+  span {
+    padding-right: 37%;
+  }
+}
+
+#rangeSliders{
+  p{
+    display: inline-block;
+  }
+
+}
+
+textarea {
+    width: 90%;
+    /* padding: 10px; */
+    margin: auto;
+  margin-bottom: 10px;
+    display: block;
+    box-shadow: 4px -4px 20px rgba(0, 0, 0, 0.08);
+
+}
+
+
+.settingsInput{
+  width: 80%;
+  float: right;
+  margin-top: 14px;
+  border: none;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+
+.range-output {
+  display: inline-block;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  margin: 0;
+  font-weight: 900;
+  margin-left: 45%;
+
+}
+
+
+.rangeMinContainer{
+  margin: 0;
+  width: 40%;
+  padding: 30px 0 0 0;
+  display: inline-block;
+
+}
+
+.addIconSmall{
+
+
+}
+
+.descBox{
+  display: block;
+  padding: 20px;
+}
+
+form input[type=text] {
+  font-size: 0.8em;
+  text-align: center;
+  width: 95%;
+  padding: 0.3em;
+  padding-top: 0.8em;
+  margin: auto;
+  margin-bottom: 10px;
+  padding-bottom: 0.8em;
+  border: 1px solid #666666;
+  border-radius: 3px;
+  box-shadow: -7px 2px 20px 5px rgba(255, 255, 255, 0.18);
+}
+
+
+input#horseName {
+  margin-bottom: 2em;
+  margin-bottom: 2em;
+}
+

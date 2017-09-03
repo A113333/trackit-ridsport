@@ -1,0 +1,50 @@
+
+<button type="button" id="addTraning" class="addTraningBtn">
+    <img src="./images/lib/icons/addNew.png"  class="addTraningIcon">
+    Lägg till en planering
+</button>
+
+<div id="plansAndLoggContainer">
+{{#each this}}
+{{#if this.horseLogg.scores}}
+        <div class="loggCardCal">
+    <div class="planCardHeader">
+        <button type="button" class="deleteLoggBtn" data-id="{{this._id}}" >   </button>
+        <span>Logg för:</span>
+        <span>{{this.type}} den {{this.date}} </span>
+        <span>Häst: {{this.horse}}</span>
+         </div>
+
+    <span> </span> <br>
+    <p>Träningstyp<b> {{this.type}}</b></p> <br>
+    <p> Plannerad intensitet:<b> {{this.intensitet}} %</b> Plannerad längd: <b>{{this.lenght}} min</b></p> <br>
+            <p>Kommentarer: {{this.horseLogg.comments}}</p>
+
+
+            <p>Total poäng för hästen: {{this.horseLogg.totalScore}}</p>
+            <p>Medel poäng: {{this.horseLogg.average}}</p>
+            <p> Bedömningspunkter <ul> {{#each this.horseLogg.scores}} <li>{{this.critt}}: {{this.pts}}</li> {{/each}} </ul> </p>
+
+    </div>
+{{else}}
+    <div class="planCard">
+    <div class="planCardHeader">
+    <button type="button" class="deletePlanBtn" data-id="{{this._id}}"></button>
+    <p class="cardHeaderHeadline">Planering: {{this.date}} <br>
+        {{this.type}} Häst: {{this.horse}} </p>
+        </div>
+
+        <p> Plannerad intensitet: {{this.intensitet}} % </p> <br>
+        <p>Plannerad längd: <b>{{this.lenght}} min</b></p>
+        <p> Bedömningspunkter <ul> {{#each this.critts}} <li>{{this}}</li> {{/each}} </ul> </p>
+        <p>Kommentarer: {{this.comments}}</p>
+
+        <button type="button" class="btn addLoggBtn" id="{{this._id}}">  <img src="./images/lib/icons/checked.png" id="{{this._id}}"> </button>
+    </div>
+    </div>
+{{/if}}
+
+
+{{/each}}
+
+</div>

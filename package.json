@@ -3,8 +3,23 @@
   "version": "1.0.0",
   "description": "progress tracker for riders",
   "main": "app.js",
+  "browser": {
+    "jquery": "./node_modules/jquery/dist/jquery.js",
+    "rangeslider": "./node_modules/rangeslider.js/dist/rangeslider.js",
+    "app": "./public/javascripts/main.js"
+  },
+  "browserify": {
+    "transform": "browserify-shim"
+  },
+  "browserify-shim": {
+    "jquery": "global:jQuery",
+    "rangeslider": "rangeslider"
+  },
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "set NODE_ENV=dev && node app.js",
+    "assemble": "assemble",
+    "buildjs": "watchify public/javascripts/main.js --debug | exorcist bundle.map.js > bundle.js",
+    "watchjs": "watchify --debug public/javascripts/main.js -t hbsfy -o public/javascripts/bundle.js -v"
   },
   "repository": {
     "type": "git",
@@ -13,18 +28,55 @@
   "author": "A11333",
   "license": "ISC",
   "dependencies": {
+    "backbone": "^1.3.3",
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "~1.17.1",
-    "bootstrap": "^3.3.7",
+    "browserify-handlebars": "^1.0.0",
+    "browserify-shim": "^3.8.14",
+    "clndr": "^1.4.7",
+    "compass": "^0.1.1",
+    "connect-flash": "^0.1.1",
     "cookie-parser": "~1.4.3",
-    "debug": "~2.6.3",
+    "csurf": "^1.9.0",
+    "debug": "^2.6.8",
+    "dotenv": "^4.0.0",
     "express": "~4.15.2",
     "express-secure-handlebars": "^2.1.0",
+    "express-session": "^1.15.3",
+    "flatpickr": "^3.0.6",
     "hbs": "~4.0.1",
-    "jquery": "^3.2.1",
+    "jquery-browserify": "^1.8.1",
+    "jquery-validation": "^1.17.0",
+    "lightslider": "^1.1.6",
+    "method-override": "^2.3.9",
+    "moment": "^2.18.1",
     "mongoose": "^4.10.3",
     "morgan": "~1.8.1",
     "nodemon": "^1.11.0",
-    "serve-favicon": "~2.4.2"
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth": "^1.0.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^1.0.0",
+    "rangeslider.js": "^2.3.1",
+    "serve-favicon": "~2.4.2",
+    "should": "~2.1.0",
+    "underscore": "^1.8.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "browserify-css": "^0.10.1",
+    "concurrently": "^3.4.0",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-handlebars": "^1.0.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-qunit": "^2.0.0",
+    "grunt-contrib-uglify": "^3.0.1",
+    "grunt-nodemon": "^0.4.2",
+    "handlebars-helper-moment": "^0.2.0",
+    "hbsfy": "^2.7.0",
+    "minifyify": "^7.3.5",
+    "watchify": "^3.9.0"
+  }
 }

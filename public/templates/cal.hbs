@@ -1,0 +1,38 @@
+<div id="calContainer">
+    <div class="controls">
+        <span class="clndr-previous-button"> < </span>
+        <span class="month">{{this.month}}</span>
+        <span class="year">{{this.year}}</span>
+
+
+        <span class="clndr-today-button"> Idag </span>
+
+
+        <span class="clndr-next-button"> > </span>
+
+
+    <div class="days-container">
+        <div class="days">
+            <div class="headers">
+                {{#each this.daysOfTheWeek}}
+                    <div class="day-header">{{this}}</div>
+
+
+                    {{/each}}
+            </div>
+
+
+    {{#each this.days}}
+
+                <div class="{{this.classes}}" id="{{this.id}}"> <p>{{this.day}}</p></div>
+
+    {{/each}}
+
+    </div>
+
+    </div>
+    </div>
+        </div>
+
+    <div id="eventInfo">
+    </div>

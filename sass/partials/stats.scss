@@ -1,0 +1,57 @@
+@import "../partials/base";
+
+
+.loggCard {
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  clear: both;
+  border-radius: 5px;
+  background-color: white;
+  display: block;
+  box-shadow: 7px 9px 20px rgba(0, 0, 0, 0.32);
+  margin-top: 10px;
+  span{
+    display: inline-block;
+    height: 1em;
+    padding: 0.2em;
+    margin: 0;
+    width: 100%;;
+  }
+
+}
+
+.userStats {
+  background-color: rgba(250, 250, 250, 0.84);
+}
+
+.loggcardHeader{
+  text-align: center;
+  background-color: #f29b12;
+  text-decoration: underline;
+  font-weight: 900;
+  width: 100%;
+}
+
+#stastSwiperContainer {
+  padding: 1em 0.5em 1em 0em;
+}
+
+.horseStats {
+  background-color: lighten($blue-color, 80%)
+}
+
+#stastView {
+  background-color: red;
+}
+
+.planCardHeader {
+  text-align: center;
+  color: white;
+  background-color: rgba(54, 59, 68, 0.66);
+  font-weight: 900;
+  border-radius: 10px 10px 0 0;
+}

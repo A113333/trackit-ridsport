@@ -1,0 +1,60 @@
+<div id="addUserLoggContainer">
+
+    <form id="addUserLoggFrom">
+        <input type="text" name="traningId" class="hidden" id="_id" value="{{event._id}}">
+
+
+        <div id="crittsContainer">
+
+            <div id="crittHeader">
+
+
+
+
+                <span id="crittHeaderSpan"> Bedömningspunkter </span>
+
+
+            </div>
+
+
+            <div id="scores"  class="scores">
+                {{#each user.selfCritts}}
+                    <p class="rangeLable"> <strong> {{this.name}} </strong></p>
+                    <input type="range" max="10" step="1" value="5"  id="score{{@index}}" name="{{this.name}}">
+
+
+
+
+
+                    <div class="desc hidden">
+                        {{this.desc}}
+                    </div>
+                {{/each}}
+
+            </div>
+
+
+            <!--<div id="newCrittBox">-->
+                <!--<input type="text" name="newCritt" id="newCritt" placeholder="Skriv ett eget bedömningskriterie">-->
+                <!--<button  type="button" class="btn addCrit">-->
+                    <!--Lägg till kriterier-->
+                <!--</button>-->
+            <!--</div>-->
+
+        </div>
+
+
+
+
+        <textarea width="100%" id="loggComments" placeholder="Kommentarer till loggen.">
+
+</textarea>
+
+
+    </form>
+</div>
+
+<button  type="button" class="btn postUserLoggBtn">
+    Spara din logga
+</button>
+

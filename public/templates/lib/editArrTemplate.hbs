@@ -1,0 +1,17 @@
+<img src="../../images/lib/icons/help.png" >
+
+{{#each this.arr}}
+    <div class="objectContainer">
+        <div class="objectHeader">
+            <img src="./images/lib/icons/delete32.png" class="smallDeleteIcon" id="{{this._id}}">
+            <span class="userCritt noClick">{{this.name}}</span>
+        </div>
+
+
+            <span class="descBox">Beskrivning: {{this.desc}} </span>
+            <br>
+        </div>
+
+{{/each}}
+
+<button type="button" id="showAddToUser" class="addToUser"> <span class="addToUserText"></span> <img src="./images/lib/icons/add32.png" class="addIconSmall" id="addIconTypeOfTraning"> </button>

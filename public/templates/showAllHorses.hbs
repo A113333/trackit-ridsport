@@ -1,0 +1,30 @@
+<div id="showAllHorsesContainer">
+{{#if this.horses}}
+{{#each this.horses}}
+    <div id="{{this._id}}" class="horseDisplay">
+  <h3 class="name">{{this.name}}</h3>
+
+        <span class="e"> <strong> E :</strong> {{this.e}} </span>  <span class="ue"> <strong> UE:</strong> {{this.ue}} </span>
+
+ <img class="iconImg img-circle" src={{this.img}}>
+
+    </div>
+{{/each}}
+</div>
+<br>
+
+
+
+{{else}}
+    <h2> Dina hästar</h2>
+
+    <p> Det verkar som att du inte har lagt till någon häst än. Tryck på "Lägg till en ny häst" för att lägga till en.
+    Ser du detta medelande trots att du har hästar.....
+    </p>
+{{/if}}
+
+<button  type="button" class="btn addHorseBtn">
+    Lägg till en ny häst
+</button>
+
+

@@ -1,0 +1,11 @@
+    <div class="md-modal md-show" id="confBox">
+        <div id="modalHeader"><p> Tryck utanför rutan för att stänga den</p></div>
+        <h1>{{this.text}}</h1>
+        <div class="confBoxAlts">
+            {{#each this.alts}}
+                 <button class="{{this}} altsBtn"> {{this}} </button>
+            {{/each}}
+        </div>
+    </div> <!-- cd-popup-container -->
+
+<div class="md-overlay"></div>

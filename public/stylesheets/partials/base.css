@@ -1,0 +1,42 @@
+/* line 37, ../../../sass/partials/base.scss */
+#appHeader {
+  background-color: #666666;
+  margin: 0;
+  height: 100%;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+/* line 49, ../../../sass/partials/base.scss */
+.bordered {
+  border: 2px solid #ffffff;
+  border-radius: 100px;
+  box-shadow: 12px 5px 20px 10px rgba(224, 224, 224, 0.35);
+}
+
+/* line 56, ../../../sass/partials/base.scss */
+.remove-all-styles {
+  all: revert;
+}
+
+/* line 60, ../../../sass/partials/base.scss */
+html, body {
+  background-color: #f1f1f1;
+  font-family: 'Raleway', sans-serif;
+  margin: auto;
+  max-width: 800px;
+  padding: 0;
+  border: 0;
+  padding-bottom: 88px;
+}
+
+/* line 71, ../../../sass/partials/base.scss */
+.main-content {
+  background-color: rgba(228, 228, 228, 0.26);
+  margin-bottom: 80px;
+  /* Add a top margin to avoid content overlay */
+}

@@ -1,0 +1,98 @@
+<div id="addPlanContainer">
+<form id="addTraningForm">
+
+
+
+    <div class="selectHorseContainer">
+    <select class="select" id="horseName"  name="horseName" data-rule-required="true">
+        {{#each this.horses}}
+            <option>{{this.name}}</option>
+        {{/each}}
+
+    </select>
+    </div>
+
+    <div class="selectTypeOfTraningContainer">
+    <select class="select" id="typeOfTraning"  name="typeOfTraning" data-rule-required="true">
+        <option selected="" value="">Typ av plannering</option>
+        {{#each this.typesOfTraning}}
+            <option>{{this.name}}</option>
+        {{/each}}
+
+    </select>
+    </div>
+
+    <div id="addPlanCal">
+
+    </div>
+
+
+    <div id="crittsContainer">
+
+<div id="crittHeader">
+
+
+
+
+<span id="crittHeaderSpan"> Bedömningspunkter </span>
+
+
+    </div>
+
+        <div id="defaultCritts">
+
+            <div class="crittGrp">
+                <select class="critts select"   name="critt" data-rule-required="true">
+                    <option selected="" value="">Bedömningspunkt</option>
+                    {{#each this.critts}}
+                        <option>{{name}}</option>
+                    {{/each}}
+                </select>
+            </div>
+
+        </div>
+        <div id="deleteOneCritt">
+            <img src="./images/lib/icons/delete.png"  id="removeCrittIcon">
+        </div>
+
+        <div id="addCritt">
+            <img src="./images/lib/icons/add.png" class="" id="addCrittIcon">
+        </div>
+
+
+    </div>
+
+
+
+    <div id="rangeSliders">
+
+        <p class="rangeLable"><strong> Träningens  intensitet/Hur ansträngande skall passet vara? </strong></p>
+        <div id="intContatiner"> <p class="easy">Lätt</p><p class="medium">Medel</p><p class="hard">Hårt</p> </div>
+    <input type="range" max="100" step="1" value="50" id="intensitet" name="intensitet">
+
+
+        <p class="rangeLable"><strong> Träningens längd: </strong></p>
+    <input type="range" max="180" step="5" value="60" id="lenght" name="lenght">
+        <div class="rangeMinContainer">
+    <output> </output> <span> Minuter</span>
+        </div>
+
+    </div>
+
+    <textarea id="planComments" placeholder="Skriv ev kommentarer till din planering här" onfocus="this.placeholder = ''"
+              onblur="this.placeholder = 'Skriv ev kommentarer till din planering här   '"/>
+    </textarea>
+
+
+
+    <button type="button" class="btn postTraningBtn" id="postTraningBtn">
+        Spara planering
+    </button>
+
+
+</form>
+</div>
+
+
+
+

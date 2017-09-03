@@ -1,0 +1,92 @@
+var addTraningTemplate = require('../../templates/addTraning.hbs');
+var displayCal = require("../calendar");
+
+
+
+var calendar = {};
+var data = [{}];
+var moment = require('moment/min/moment-with-locales.min');
+var eventArray = [];
+require('../CLNDR');
+var calTemplate = require('../../templates/cal.hbs');
+var thisMonth = moment().format('YYYY-MM');
+
+global._ = require('underscore');
+
+var showFirstPage = function () {
+
+
+  //todo hämta alla userns hästar o skicka med dem till template
+  $.get('/user', function (data) {
+    user = data;
+    console.log(user);
+
+    $('.main-content').html(addTraningTemplate({ data: user })).promise().done(function(){
+      displayCal.display('#calenderAddTraning');
+
+
+      //https://chmln.github.io/flatpickr/examples/
+
+      $('.datepickerAddTraning').flatpickr(
+        {
+          enableTime: true,
+          minDate: 'today',
+          onReady: function () {
+            console.log('onrdy datepicker');
+
+          },
+        });
+
+
+      $(".rsTest").rangeslider({ // Feature detection the default is `true`.
+        // Set this to `false` if you want to use
+        // the polyfill also in Browsers which support
+        // the native <input type="range"> element.
+        polyfill: false,
+
+        // Default CSS classes
+        rangeClass: 'rangeslider',
+        disabledClass: 'rangeslider--disabled',
+        horizontalClass: 'rangeslider--horizontal',
+        verticalClass: 'rangeslider--vertical',
+        fillClass: 'rangeslider__fill',
+        handleClass: 'rangeslider__handle',
+
+        // Callback function
+        onInit: function() {
+          this.output = $('<div class="range-output"/>').insertAfter(this.$range).html(this.$element.val());
+        },
+
+        // Callback function
+        onSlide: function(position, value) {
+          this.output.html(value);
+          console.log(value)
+
+        },
+
+        // Callback function
+        onSlideEnd: function(position, value) {console.log("slide ended")}
+      });
+
+
+
+    });
+
+
+
+
+  });
+
+  window.location.hash = 'addTraningLogg';
+  console.log('click add traning körs');
+
+};
+
+var mainBtn = function () {
+  showFirstPage()
+
+};
+
+module.exports ={
+  mainBtn: mainBtn,
+};

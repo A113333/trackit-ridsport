@@ -1,0 +1,2635 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 37, ../../sass/partials/base.scss */
+#appHeader {
+  background-color: #666666;
+  margin: 0;
+  height: 100%;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+/* line 49, ../../sass/partials/base.scss */
+.bordered {
+  border: 2px solid #ffffff;
+  border-radius: 100px;
+  box-shadow: 12px 5px 20px 10px rgba(224, 224, 224, 0.35);
+}
+
+/* line 56, ../../sass/partials/base.scss */
+.remove-all-styles {
+  all: revert;
+}
+
+/* line 60, ../../sass/partials/base.scss */
+html, body {
+  background-color: #f1f1f1;
+  font-family: 'Raleway', sans-serif;
+  margin: auto;
+  max-width: 800px;
+  padding: 0;
+  border: 0;
+  padding-bottom: 88px;
+}
+
+/* line 71, ../../sass/partials/base.scss */
+.main-content {
+  background-color: rgba(228, 228, 228, 0.26);
+  margin-bottom: 80px;
+  /* Add a top margin to avoid content overlay */
+}
+
+/* line 1, ../../sass/partials/nav.scss */
+.bottomNavBar {
+  max-width: 800px;
+  width: 100%;
+  height: 66px;
+  position: fixed;
+  bottom: 0px;
+  background-color: white;
+  overflow: hidden;
+}
+
+/* line 11, ../../sass/partials/nav.scss */
+img.navIcon {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  display: inline-block;
+}
+
+/* line 17, ../../sass/partials/nav.scss */
+img.current {
+  background-color: rgba(128, 128, 128, 0.27);
+  border-radius: 100px;
+  border: 2px solid rgba(0, 0, 0, 0.62);
+}
+
+/* line 23, ../../sass/partials/nav.scss */
+.navImgContainer {
+  text-align: center;
+}
+
+/*! lightslider - v1.1.3 - 2015-04-14
+* https://github.com/sachinchoolur/lightslider
+* Copyright (c) 2015 Sachin N; Licensed MIT */
+/** /!!! core css Should not edit !!!/**/
+/* line 7, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter {
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 16, ../../sass/partials/iconSelect.scss */
+.lightSlider:before, .lightSlider:after {
+  content: " ";
+  display: table;
+}
+
+/* line 20, ../../sass/partials/iconSelect.scss */
+.lightSlider {
+  overflow: hidden;
+  margin: 0;
+}
+
+/* line 24, ../../sass/partials/iconSelect.scss */
+.lSSlideWrapper {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 29, ../../sass/partials/iconSelect.scss */
+.lSSlideWrapper > .lightSlider:after {
+  clear: both;
+}
+
+/* line 32, ../../sass/partials/iconSelect.scss */
+.lSSlideWrapper .lSSlide {
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-transition: all 1s;
+  -webkit-transition-property: -webkit-transform,height;
+  -moz-transition-property: -moz-transform,height;
+  transition-property: transform,height;
+  -webkit-transition-duration: inherit !important;
+  transition-duration: inherit !important;
+  -webkit-transition-timing-function: inherit !important;
+  transition-timing-function: inherit !important;
+}
+
+/* line 45, ../../sass/partials/iconSelect.scss */
+.lSSlideWrapper .lSFade {
+  position: relative;
+}
+
+/* line 48, ../../sass/partials/iconSelect.scss */
+.lSSlideWrapper .lSFade > * {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  margin-right: 0;
+  width: 100%;
+}
+
+/* line 56, ../../sass/partials/iconSelect.scss */
+.lSSlideWrapper.usingCss .lSFade > * {
+  opacity: 0;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition-duration: inherit !important;
+  transition-duration: inherit !important;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-timing-function: inherit !important;
+  transition-timing-function: inherit !important;
+}
+
+/* line 67, ../../sass/partials/iconSelect.scss */
+.lSSlideWrapper .lSFade > *.active {
+  z-index: 10;
+}
+
+/* line 70, ../../sass/partials/iconSelect.scss */
+.lSSlideWrapper.usingCss .lSFade > *.active {
+  opacity: 1;
+}
+
+/** /!!! End of core css Should not edit !!!/**/
+/* Pager */
+/* line 76, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter .lSPager.lSpg {
+  margin: 10px 0 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* line 81, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter .lSPager.lSpg > li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 5px;
+}
+
+/* line 86, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter .lSPager.lSpg > li a {
+  background-color: #222222;
+  border-radius: 30px;
+  display: inline-block;
+  height: 8px;
+  overflow: hidden;
+  text-indent: -999em;
+  width: 8px;
+  position: relative;
+  z-index: 99;
+  -webkit-transition: all 0.5s linear 0s;
+  transition: all 0.5s linear 0s;
+}
+
+/* line 99, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {
+  background-color: #428bca;
+}
+
+/* line 102, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter .media {
+  opacity: 0.8;
+}
+
+/* line 105, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter .media.active {
+  opacity: 1;
+}
+
+/* End of pager */
+/** Gallery */
+/* line 111, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter .lSPager.lSGallery {
+  list-style: none outside none;
+  padding-left: 0;
+  margin: 0;
+  overflow: hidden;
+  transform: translate3d(0px, 0px, 0px);
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -ms-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate3d(0px, 0px, 0px);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 130, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter .lSPager.lSGallery li {
+  overflow: hidden;
+  -webkit-transition: border-radius 0.12s linear 0s 0.35s linear 0s;
+  transition: border-radius 0.12s linear 0s 0.35s linear 0s;
+}
+
+/* line 135, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {
+  border-radius: 5px;
+}
+
+/* line 138, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter .lSPager.lSGallery img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+/* line 143, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter .lSPager.lSGallery:before, .lSSlideOuter .lSPager.lSGallery:after {
+  content: " ";
+  display: table;
+}
+
+/* line 147, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter .lSPager.lSGallery:after {
+  clear: both;
+}
+
+/* End of Gallery*/
+/* slider actions */
+/* line 153, ../../sass/partials/iconSelect.scss */
+.lSAction > a {
+  width: 32px;
+  display: block;
+  top: 50%;
+  height: 32px;
+  background-image: url("../img/controls.png");
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  margin-top: -16px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.35s linear 0s;
+  transition: opacity 0.35s linear 0s;
+}
+
+/* line 167, ../../sass/partials/iconSelect.scss */
+.lSAction > a:hover {
+  opacity: 1;
+}
+
+/* line 170, ../../sass/partials/iconSelect.scss */
+.lSAction > .lSPrev {
+  background-position: 0 0;
+  left: 10px;
+}
+
+/* line 174, ../../sass/partials/iconSelect.scss */
+.lSAction > .lSNext {
+  background-position: -32px 0;
+  right: 10px;
+}
+
+/* line 178, ../../sass/partials/iconSelect.scss */
+.lSAction > a.disabled {
+  pointer-events: none;
+}
+
+/* line 181, ../../sass/partials/iconSelect.scss */
+.cS-hidden {
+  height: 1px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  overflow: hidden;
+}
+
+/* vertical */
+/* line 190, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter.vertical {
+  position: relative;
+}
+
+/* line 193, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter.vertical.noPager {
+  padding-right: 0px !important;
+}
+
+/* line 196, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter.vertical .lSGallery {
+  position: absolute !important;
+  right: 0;
+  top: 0;
+}
+
+/* line 201, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter.vertical .lightSlider > * {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* vertical controlls */
+/* line 207, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter.vertical .lSAction > a {
+  left: 50%;
+  margin-left: -14px;
+  margin-top: 0;
+}
+
+/* line 212, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter.vertical .lSAction > .lSNext {
+  background-position: 31px -31px;
+  bottom: 10px;
+  top: auto;
+}
+
+/* line 217, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter.vertical .lSAction > .lSPrev {
+  background-position: 0 -31px;
+  bottom: auto;
+  top: 10px;
+}
+
+/* vertical */
+/* Rtl */
+/* line 226, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter.lSrtl {
+  direction: rtl;
+}
+
+/* line 229, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter .lightSlider, .lSSlideOuter .lSPager {
+  padding-left: 0;
+  list-style: none outside none;
+}
+
+/* line 233, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter.lSrtl .lightSlider, .lSSlideOuter.lSrtl .lSPager {
+  padding-right: 0;
+}
+
+/* line 236, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter .lightSlider > *, .lSSlideOuter .lSGallery li {
+  float: left;
+}
+
+/* line 239, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter.lSrtl .lightSlider > *, .lSSlideOuter.lSrtl .lSGallery li {
+  float: right !important;
+}
+
+/* Rtl */
+@-webkit-keyframes rightEnd {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -15px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes rightEnd {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -15px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-webkit-keyframes topEnd {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -15px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes topEnd {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -15px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-webkit-keyframes leftEnd {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 15px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes leftEnd {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 15px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-webkit-keyframes bottomEnd {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: -15px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@keyframes bottomEnd {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: -15px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+/* line 348, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter .rightEnd {
+  -webkit-animation: rightEnd 0.3s;
+  animation: rightEnd 0.3s;
+  position: relative;
+}
+
+/* line 353, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter .leftEnd {
+  -webkit-animation: leftEnd 0.3s;
+  animation: leftEnd 0.3s;
+  position: relative;
+}
+
+/* line 358, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter.vertical .rightEnd {
+  -webkit-animation: topEnd 0.3s;
+  animation: topEnd 0.3s;
+  position: relative;
+}
+
+/* line 363, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter.vertical .leftEnd {
+  -webkit-animation: bottomEnd 0.3s;
+  animation: bottomEnd 0.3s;
+  position: relative;
+}
+
+/* line 368, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter.lSrtl .rightEnd {
+  -webkit-animation: leftEnd 0.3s;
+  animation: leftEnd 0.3s;
+  position: relative;
+}
+
+/* line 373, ../../sass/partials/iconSelect.scss */
+.lSSlideOuter.lSrtl .leftEnd {
+  -webkit-animation: rightEnd 0.3s;
+  animation: rightEnd 0.3s;
+  position: relative;
+}
+
+/*/  GRab cursor */
+/* line 379, ../../sass/partials/iconSelect.scss */
+.lightSlider.lsGrab > * {
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: -o-grab;
+  cursor: -ms-grab;
+  cursor: grab;
+}
+
+/* line 386, ../../sass/partials/iconSelect.scss */
+.lightSlider.lsGrabbing > * {
+  cursor: move;
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: -o-grabbing;
+  cursor: -ms-grabbing;
+  cursor: grabbing;
+}
+
+/* line 37, ../../sass/partials/base.scss */
+#appHeader {
+  background-color: #666666;
+  margin: 0;
+  height: 100%;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+/* line 49, ../../sass/partials/base.scss */
+.bordered {
+  border: 2px solid #ffffff;
+  border-radius: 100px;
+  box-shadow: 12px 5px 20px 10px rgba(224, 224, 224, 0.35);
+}
+
+/* line 56, ../../sass/partials/base.scss */
+.remove-all-styles {
+  all: revert;
+}
+
+/* line 60, ../../sass/partials/base.scss */
+html, body {
+  background-color: #f1f1f1;
+  font-family: 'Raleway', sans-serif;
+  margin: auto;
+  max-width: 800px;
+  padding: 0;
+  border: 0;
+  padding-bottom: 88px;
+}
+
+/* line 71, ../../sass/partials/base.scss */
+.main-content {
+  background-color: rgba(228, 228, 228, 0.26);
+  margin-bottom: 80px;
+  /* Add a top margin to avoid content overlay */
+}
+
+/* line 3, ../../sass/partials/calendar.scss */
+#mainCal {
+  margin-top: 10px;
+  background-color: rgba(228, 228, 228, 0.26);
+}
+
+/* line 9, ../../sass/partials/calendar.scss */
+.calendar {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 19, ../../sass/partials/calendar.scss */
+.controls {
+  color: white;
+  font-size: 1.5em;
+  background-color: rgba(26, 26, 26, 0.36);
+  text-align: center;
+  text-align: center;
+}
+/* line 31, ../../sass/partials/calendar.scss */
+.controls .month {
+  padding: 12px 0;
+  text-align: center;
+}
+/* line 37, ../../sass/partials/calendar.scss */
+.controls .clndr-previous-button {
+  margin-left: 5%;
+  color: #d7cfff;
+  float: left;
+}
+/* line 42, ../../sass/partials/calendar.scss */
+.controls .clndr-next-button {
+  margin-right: 5%;
+  color: #d7cfff;
+  float: right;
+}
+
+/* line 58, ../../sass/partials/calendar.scss */
+.clndr-grid .days-of-the-week {
+  width: 100%;
+  text-align: center;
+}
+
+/* line 65, ../../sass/partials/calendar.scss */
+.headers {
+  border-bottom: 1px solid rgba(89, 89, 89, 0.1);
+}
+/* line 68, ../../sass/partials/calendar.scss */
+.headers .day-header {
+  background-color: #f29b12;
+  text-align: center;
+  float: left;
+  font-size: 0.5em;
+  font-weight: 900;
+  width: 14.28571%;
+}
+
+/* line 84, ../../sass/partials/calendar.scss */
+.day {
+  font-weight: 900;
+  color: white;
+  background-color: rgba(213, 213, 213, 0.28);
+  border-color: rgba(89, 89, 89, 0.1);
+  border-bottom: 1px solid rgba(89, 89, 89, 0.1);
+  width: 14.28571%;
+  float: left;
+  position: relative;
+  text-align: center;
+  height: inherit;
+  font-size: 0.5em;
+}
+/* line 97, ../../sass/partials/calendar.scss */
+.day p {
+  padding: 6px;
+}
+/* line 101, ../../sass/partials/calendar.scss */
+.day:hover {
+  background: #eee;
+}
+/* line 103, ../../sass/partials/calendar.scss */
+.day.past, .day.p {
+  color: rgba(0, 0, 0, 0.1);
+}
+/* line 113, ../../sass/partials/calendar.scss */
+.day.today p .day.today p, .day.today p .day.my-today p, .day.my-today p .day.today p, .day.my-today p .day.my-today p {
+  /* background-color: #ff0e3b; */
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 9px;
+  margin-top: 9px;
+  width: 36%;
+  height: 50%;
+  color: #f29b12;
+  margin-right: auto;
+  font-weight: bolder;
+  margin-left: auto;
+  /* padding: 5px; */
+  border: 2px solid #3759ed;
+  padding-top: 8px;
+}
+/* line 158, ../../sass/partials/calendar.scss */
+.day .day-contents {
+  text-align: right;
+}
+
+/* line 164, ../../sass/partials/calendar.scss */
+.empty, .adjacent-month, .my-empty, .my-adjacent-month {
+  border-bottom: 1px solid rgba(89, 89, 89, 0.1);
+}
+/* line 170, ../../sass/partials/calendar.scss */
+.empty:hover, .adjacent-month:hover, .my-empty:hover, .my-adjacent-month:hover {
+  background: #ddd;
+}
+
+/* line 180, ../../sass/partials/calendar.scss */
+:last-child .day, :last-child .my-day {
+  border-bottom: 1px solid rgba(89, 89, 89, 0.1);
+}
+/* line 185, ../../sass/partials/calendar.scss */
+:last-child .empty, :last-child .my-empty {
+  border-bottom: 1px solid rgba(89, 89, 89, 0.1);
+}
+
+/* line 193, ../../sass/partials/calendar.scss */
+.event-indicator {
+  background-color: #3BB7E8;
+  border-radius: 100%;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 15px;
+}
+/* line 203, ../../sass/partials/calendar.scss */
+.event-indicator.adjacent-month, .event-indicator.inactive {
+  opacity: 0.3;
+}
+
+/* line 209, ../../sass/partials/calendar.scss */
+.clickedDate p {
+  padding-top: 7px;
+  padding-right: 5px;
+  padding-bottom: 7px;
+  padding-left: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 36%;
+  height: 50%;
+  color: #f29b12;
+  margin-right: auto;
+  font-weight: bolder;
+  margin-left: auto;
+  /* padding: 5px; */
+  border: 1px solid transparent;
+  border-radius: 100%;
+}
+
+/* line 228, ../../sass/partials/calendar.scss */
+.day.today {
+  background-color: white;
+  color: black;
+}
+
+/* line 233, ../../sass/partials/calendar.scss */
+.day.event {
+  background-color: rgba(96, 158, 100, 0.58);
+}
+
+/* line 237, ../../sass/partials/calendar.scss */
+#eventInfo {
+  clear: both;
+  background-color: rgba(211, 211, 211, 0.59);
+}
+
+/* line 241, ../../sass/partials/calendar.scss */
+#plansAndLoggContainer {
+  padding-bottom: 20px;
+  background-color: rgba(228, 228, 228, 0.26);
+  margin-top: 5px;
+}
+
+/* line 246, ../../sass/partials/calendar.scss */
+.planCardHeader {
+  text-align: center;
+  background-color: rgba(223, 223, 223, 0.32);
+  padding: 10px;
+}
+
+/* line 252, ../../sass/partials/calendar.scss */
+p.cardHeaderHeadline {
+  font-weight: bolder;
+  text-decoration-line: underline;
+}
+
+/* line 257, ../../sass/partials/calendar.scss */
+.loggCardCal {
+  overflow: hidden;
+  /* display: inline-block; */
+  width: 80%;
+  margin: auto;
+  padding-bottom: 10px;
+  /* padding-top: 10px; */
+  margin-bottom: 10px;
+  clear: both;
+  border-radius: 10px;
+  background-color: white;
+  display: block;
+  box-shadow: 7px 9px 20px rgba(255, 255, 255, 0.33);
+  margin-top: 10px;
+  /* margin-top: 135px; */
+  margin-top: 10px;
+  /* margin-top: 135px; */
+}
+/* line 273, ../../sass/partials/calendar.scss */
+.loggCardCal p {
+  padding: 1px;
+  margin: 3px;
+}
+
+/* line 279, ../../sass/partials/calendar.scss */
+.pushForward {
+  position: relative;
+}
+
+/* line 280, ../../sass/partials/calendar.scss */
+.pushForward:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* line 290, ../../sass/partials/calendar.scss */
+.planCard {
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.78);
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  clear: both;
+}
+/* line 299, ../../sass/partials/calendar.scss */
+.planCard p {
+  margin: 0;
+  padding: 10px 0 0 0;
+  margin: 5px 0 5px 0;
+}
+
+/* line 1, ../../sass/partials/allHorses.scss */
+#showAllHorsesContainer {
+  padding-bottom: 2px;
+  display: block;
+  border-radius: 10px;
+}
+/* line 5, ../../sass/partials/allHorses.scss */
+#showAllHorsesContainer .horseDisplay {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: white;
+}
+/* line 10, ../../sass/partials/allHorses.scss */
+#showAllHorsesContainer .name {
+  float: right;
+}
+/* line 13, ../../sass/partials/allHorses.scss */
+#showAllHorsesContainer span {
+  float: right;
+  clear: both;
+}
+/* line 17, ../../sass/partials/allHorses.scss */
+#showAllHorsesContainer img {
+  display: block;
+}
+
+/* line 1, ../../sass/partials/addHorse.scss */
+#addHorse {
+  padding-top: 25px;
+  font-size: 1.5em;
+  margin: 10px;
+}
+/* line 7, ../../sass/partials/addHorse.scss */
+#addHorse .addCrit {
+  width: 100%;
+  border-radius: 0;
+  margin: 0;
+  padding: 0.8em;
+}
+
+/* line 16, ../../sass/partials/addHorse.scss */
+#critts {
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+}
+
+/* line 25, ../../sass/partials/addHorse.scss */
+.ageGrp .typeGrp .nrOfCrittsGrp .addCritt {
+  margin-bottom: 2em;
+}
+
+/* line 29, ../../sass/partials/addHorse.scss */
+.chooseImg {
+  padding: 20px;
+}
+
+/* line 33, ../../sass/partials/addHorse.scss */
+.iconImg {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* line 37, ../../sass/partials/base.scss */
+#appHeader {
+  background-color: #666666;
+  margin: 0;
+  height: 100%;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+/* line 49, ../../sass/partials/base.scss */
+.bordered {
+  border: 2px solid #ffffff;
+  border-radius: 100px;
+  box-shadow: 12px 5px 20px 10px rgba(224, 224, 224, 0.35);
+}
+
+/* line 56, ../../sass/partials/base.scss */
+.remove-all-styles {
+  all: revert;
+}
+
+/* line 60, ../../sass/partials/base.scss */
+html, body {
+  background-color: #f1f1f1;
+  font-family: 'Raleway', sans-serif;
+  margin: auto;
+  max-width: 800px;
+  padding: 0;
+  border: 0;
+  padding-bottom: 88px;
+}
+
+/* line 71, ../../sass/partials/base.scss */
+.main-content {
+  background-color: rgba(228, 228, 228, 0.26);
+  margin-bottom: 80px;
+  /* Add a top margin to avoid content overlay */
+}
+
+/* line 3, ../../sass/partials/buttons.scss */
+.btn, .loginBox .simform__actions .sumbit {
+  background-color: #3759ed;
+  padding: 8px;
+  border: none;
+  color: #f4f3ee;
+  margin: 0;
+  width: 100%;
+  font-weight: 900;
+  border-radius: 5px;
+  box-shadow: inset 3px 4px 20px 4px rgba(255, 255, 255, 0.33);
+}
+
+/* line 15, ../../sass/partials/buttons.scss */
+.addOneCritt {
+  border: none;
+  font-size: 2em;
+  background-color: transparent;
+}
+
+/* line 23, ../../sass/partials/buttons.scss */
+.removeOnCritt {
+  border-radius: 49%;
+  font-size: 2em;
+  padding: 8px 10px 8px 10px;
+  background: #ff1900;
+}
+
+/* line 31, ../../sass/partials/buttons.scss */
+.settingsBtn {
+  font-weight: bolder;
+  color: white;
+  width: 100%;
+  background-color: #3759ed;
+  padding: 8px;
+  margin-bottom: 0.5em;
+  border: #3759ed;
+}
+
+/* line 42, ../../sass/partials/buttons.scss */
+.btnArrow {
+  height: 2em;
+  float: right;
+}
+
+/* line 47, ../../sass/partials/buttons.scss */
+.addHorseBtn {
+  width: 100%;
+  border-radius: 0;
+  margin: 0;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+/* line 55, ../../sass/partials/buttons.scss */
+.addTraningBtn {
+  background-color: #f29b12;
+  padding: 8px;
+  margin-top: 0px;
+  opacity: 1;
+  border: none;
+  color: #ffffff;
+  margin: 0;
+  float: right;
+  width: 100%;
+  font-weight: 900;
+  margin-left: 2%;
+  font-size: 1.3em;
+  padding-top: 13px;
+  margin-bottom: 10px;
+}
+
+/* line 72, ../../sass/partials/buttons.scss */
+.addTraningIcon {
+  height: 32px;
+  float: left;
+  margin-left: 5px;
+}
+
+/* line 80, ../../sass/partials/buttons.scss */
+.addLoggBtn {
+  padding: 8px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin: 0;
+  width: 12%;
+  font-weight: 900;
+  font-size: 30px;
+  float: right;
+  z-index: 999;
+}
+
+/* line 94, ../../sass/partials/buttons.scss */
+.deleteLoggBtn {
+  background-image: url("../../images/lib/icons/delete32.png");
+  height: 32px;
+  background-color: transparent;
+  float: left;
+  border: none;
+  padding: 5px 0 0 0;
+}
+
+/* line 104, ../../sass/partials/buttons.scss */
+.deletePlanBtn {
+  background-image: url("../../images/lib/icons/delete32.png");
+  height: 32px;
+  background-color: transparent;
+  float: left;
+  border: none;
+  padding: 5px 0 0 0;
+}
+
+/* line 3, ../../sass/partials/addPlan.scss */
+#crittHeader {
+  text-align: center;
+  padding-top: 20px;
+  height: 32px;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 0.8em;
+}
+
+/* line 13, ../../sass/partials/addPlan.scss */
+#crittHeaderSpan {
+  font-weight: bolder;
+  height: 64px;
+  font-size: 2em;
+  padding-bottom: 15px;
+  /* text-align: center; */
+}
+
+/* line 22, ../../sass/partials/addPlan.scss */
+#crittsContainer {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0 10px 0;
+  padding: 10px;
+  background-color: rgba(234, 229, 213, 0.28);
+  border: 1px solid rgba(217, 203, 203, 0.18);
+  box-shadow: -1px -4px 20px rgba(201, 205, 143, 0.23);
+}
+
+/* line 32, ../../sass/partials/addPlan.scss */
+p.rangeLable {
+  padding: 20px;
+  margin: auto;
+  display: block;
+  text-align: center;
+  font-weight: 900;
+}
+
+/* line 40, ../../sass/partials/addPlan.scss */
+div#rangeSliders {
+  padding: 12px;
+}
+
+/* line 44, ../../sass/partials/addPlan.scss */
+#rangeSliders {
+  display: block;
+  padding: 15px;
+  background-color: rgba(102, 102, 102, 0.58);
+  color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* line 37, ../../sass/partials/base.scss */
+#appHeader {
+  background-color: #666666;
+  margin: 0;
+  height: 100%;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+/* line 49, ../../sass/partials/base.scss */
+.bordered {
+  border: 2px solid #ffffff;
+  border-radius: 100px;
+  box-shadow: 12px 5px 20px 10px rgba(224, 224, 224, 0.35);
+}
+
+/* line 56, ../../sass/partials/base.scss */
+.remove-all-styles {
+  all: revert;
+}
+
+/* line 60, ../../sass/partials/base.scss */
+html, body {
+  background-color: #f1f1f1;
+  font-family: 'Raleway', sans-serif;
+  margin: auto;
+  max-width: 800px;
+  padding: 0;
+  border: 0;
+  padding-bottom: 88px;
+}
+
+/* line 71, ../../sass/partials/base.scss */
+.main-content {
+  background-color: rgba(228, 228, 228, 0.26);
+  margin-bottom: 80px;
+  /* Add a top margin to avoid content overlay */
+}
+
+/* line 4, ../../sass/partials/stats.scss */
+.loggCard {
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  clear: both;
+  border-radius: 5px;
+  background-color: white;
+  display: block;
+  box-shadow: 7px 9px 20px rgba(0, 0, 0, 0.32);
+  margin-top: 10px;
+}
+/* line 17, ../../sass/partials/stats.scss */
+.loggCard span {
+  display: inline-block;
+  height: 1em;
+  padding: 0.2em;
+  margin: 0;
+  width: 100%;
+}
+
+/* line 27, ../../sass/partials/stats.scss */
+.userStats {
+  background-color: rgba(250, 250, 250, 0.84);
+}
+
+/* line 31, ../../sass/partials/stats.scss */
+.loggcardHeader {
+  text-align: center;
+  background-color: #f29b12;
+  text-decoration: underline;
+  font-weight: 900;
+  width: 100%;
+}
+
+/* line 39, ../../sass/partials/stats.scss */
+#stastSwiperContainer {
+  padding: 1em 0.5em 1em 0em;
+}
+
+/* line 43, ../../sass/partials/stats.scss */
+.horseStats {
+  background-color: white;
+}
+
+/* line 47, ../../sass/partials/stats.scss */
+#stastView {
+  background-color: red;
+}
+
+/* line 51, ../../sass/partials/stats.scss */
+.planCardHeader {
+  text-align: center;
+  color: white;
+  background-color: rgba(54, 59, 68, 0.66);
+  font-weight: 900;
+  border-radius: 10px 10px 0 0;
+}
+
+/* line 37, ../../sass/partials/base.scss */
+#appHeader {
+  background-color: #666666;
+  margin: 0;
+  height: 100%;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+/* line 49, ../../sass/partials/base.scss */
+.bordered {
+  border: 2px solid #ffffff;
+  border-radius: 100px;
+  box-shadow: 12px 5px 20px 10px rgba(224, 224, 224, 0.35);
+}
+
+/* line 56, ../../sass/partials/base.scss */
+.remove-all-styles {
+  all: revert;
+}
+
+/* line 60, ../../sass/partials/base.scss */
+html, body {
+  background-color: #f1f1f1;
+  font-family: 'Raleway', sans-serif;
+  margin: auto;
+  max-width: 800px;
+  padding: 0;
+  border: 0;
+  padding-bottom: 88px;
+}
+
+/* line 71, ../../sass/partials/base.scss */
+.main-content {
+  background-color: rgba(228, 228, 228, 0.26);
+  margin-bottom: 80px;
+  /* Add a top margin to avoid content overlay */
+}
+
+/* line 4, ../../sass/partials/user.scss */
+#showAddToUser {
+  border: none;
+  width: 70%;
+  border-radius: 25px;
+  margin: auto;
+  margin-bottom: 15px;
+  display: block;
+  padding: 10px;
+}
+
+/* line 14, ../../sass/partials/user.scss */
+.objectContainer {
+  background-color: white;
+  margin: 0 20px 20px 20px;
+  box-shadow: -9px 4px 20px rgba(235, 235, 235, 0.4);
+  border-radius: 20px;
+}
+
+/* line 21, ../../sass/partials/user.scss */
+.objectHeader {
+  border-radius: 10px 10px 0 0;
+  height: 42px;
+  background-color: #3759ed;
+  color: white;
+  font-weight: bolder;
+}
+
+/* line 29, ../../sass/partials/user.scss */
+.addToUser {
+  color: white;
+  background-color: #f29b12;
+  border: none;
+  width: 70%;
+  border-radius: 25px;
+  margin: auto;
+  display: block;
+  padding: 10px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+
+/* line 42, ../../sass/partials/user.scss */
+.addToUserText {
+  display: block;
+  width: 70%;
+  padding: 10px 0 0 30px;
+  margin: 0;
+  float: left;
+}
+
+/* line 50, ../../sass/partials/user.scss */
+.smallDeleteIcon {
+  padding: 5px;
+}
+
+/* line 54, ../../sass/partials/user.scss */
+.noClick {
+  display: block;
+  background-color: transparent;
+}
+
+/* line 59, ../../sass/partials/user.scss */
+.userCritt {
+  padding: 10px;
+  color: white;
+  position: relative;
+  top: 0;
+  display: block;
+  /* float: right; */
+  text-align: center;
+  float: right;
+  padding-right: 40%;
+  /* width: 00%; */
+}
+
+/* line 57, ../../sass/partials/lib/loginForm.scss */
+.loginBox {
+  width: 100%;
+  height: 70%;
+}
+/* line 62, ../../sass/partials/lib/loginForm.scss */
+.loginBox .logmod {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+/* line 2, ../../sass/partials/lib/loginForm.scss */
+.loginBox .logmod:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 75, ../../sass/partials/lib/loginForm.scss */
+.loginBox .logmod__wrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);
+  margin: 120px auto;
+}
+/* line 85, ../../sass/partials/lib/loginForm.scss */
+.loginBox .logmod__close {
+  display: block;
+  position: absolute;
+  right: 50%;
+  background: url("http://imgh.us/close_white.svg") no-repeat scroll 0% 0% transparent;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  top: -72px;
+  margin-right: -24px;
+  width: 48px;
+  height: 48px;
+}
+/* line 101, ../../sass/partials/lib/loginForm.scss */
+.loginBox .logmod__container {
+  overflow: hidden;
+  width: 100%;
+}
+/* line 2, ../../sass/partials/lib/loginForm.scss */
+.loginBox .logmod__container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 108, ../../sass/partials/lib/loginForm.scss */
+.loginBox .logmod__tab {
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+}
+/* line 116, ../../sass/partials/lib/loginForm.scss */
+.loginBox .logmod__tab-wrapper {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+/* line 122, ../../sass/partials/lib/loginForm.scss */
+.loginBox .logmod__tab.show {
+  opacity: 1;
+  height: 100%;
+  visibility: visible;
+}
+/* line 130, ../../sass/partials/lib/loginForm.scss */
+.loginBox .logmod__tabs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 2, ../../sass/partials/lib/loginForm.scss */
+.loginBox .logmod__tabs:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 138, ../../sass/partials/lib/loginForm.scss */
+.loginBox .logmod__tabs li.current a {
+  background: #FFF;
+  color: #333;
+}
+/* line 144, ../../sass/partials/lib/loginForm.scss */
+.loginBox .logmod__tabs li a {
+  width: 50%;
+  position: relative;
+  float: left;
+  text-align: center;
+  background: #D2D8D8;
+  line-height: 36px;
+  height: 36px;
+  text-decoration: none;
+  color: #809191;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* line 159, ../../sass/partials/lib/loginForm.scss */
+.loginBox .logmod__tabs li a:focus {
+  outline: dotted 1px;
+}
+/* line 167, ../../sass/partials/lib/loginForm.scss */
+.loginBox .logmod__heading {
+  text-align: center;
+  padding: 12px 0 12px 0;
+}
+/* line 172, ../../sass/partials/lib/loginForm.scss */
+.loginBox .logmod__heading-subtitle {
+  display: block;
+  font-weight: 400;
+  font-size: 15px;
+  color: #888;
+  line-height: 48px;
+}
+/* line 182, ../../sass/partials/lib/loginForm.scss */
+.loginBox .logmod__form {
+  border-top: 1px solid #e5e5e5;
+}
+/* line 187, ../../sass/partials/lib/loginForm.scss */
+.loginBox .logmod__alter {
+  display: block;
+  position: relative;
+  margin-top: 7px;
+}
+/* line 2, ../../sass/partials/lib/loginForm.scss */
+.loginBox .logmod__alter:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 193, ../../sass/partials/lib/loginForm.scss */
+.loginBox .logmod__alter .connect:last-child {
+  border-radius: 0 0 4px 4px;
+}
+/* line 201, ../../sass/partials/lib/loginForm.scss */
+.loginBox .connect {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 72px;
+  line-height: 72px;
+  text-decoration: none;
+}
+/* line 2, ../../sass/partials/lib/loginForm.scss */
+.loginBox .connect:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 211, ../../sass/partials/lib/loginForm.scss */
+.loginBox .connect:focus, .loginBox .connect:hover, .loginBox .connect:visited {
+  color: #FFF;
+  text-decoration: none;
+}
+/* line 219, ../../sass/partials/lib/loginForm.scss */
+.loginBox .connect__icon {
+  vertical-align: middle;
+  float: left;
+  width: 70px;
+  text-align: center;
+  font-size: 22px;
+}
+/* line 228, ../../sass/partials/lib/loginForm.scss */
+.loginBox .connect__context {
+  vertical-align: middle;
+  text-align: center;
+}
+/* line 234, ../../sass/partials/lib/loginForm.scss */
+.loginBox .connect.facebook {
+  background: #3b5998;
+  color: #FFF;
+}
+/* line 238, ../../sass/partials/lib/loginForm.scss */
+.loginBox .connect.facebook a {
+  color: #FFF;
+}
+/* line 242, ../../sass/partials/lib/loginForm.scss */
+.loginBox .connect.facebook .connect__icon {
+  background: #283d68;
+}
+/* line 234, ../../sass/partials/lib/loginForm.scss */
+.loginBox .connect.googleplus {
+  background: #dd4b39;
+  color: #FFF;
+}
+/* line 238, ../../sass/partials/lib/loginForm.scss */
+.loginBox .connect.googleplus a {
+  color: #FFF;
+}
+/* line 242, ../../sass/partials/lib/loginForm.scss */
+.loginBox .connect.googleplus .connect__icon {
+  background: #b52f1f;
+}
+/* line 249, ../../sass/partials/lib/loginForm.scss */
+.loginBox .simform {
+  position: relative;
+}
+/* line 253, ../../sass/partials/lib/loginForm.scss */
+.loginBox .simform__actions {
+  padding: 15px;
+  font-size: 14px;
+}
+/* line 2, ../../sass/partials/lib/loginForm.scss */
+.loginBox .simform__actions:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 258, ../../sass/partials/lib/loginForm.scss */
+.loginBox .simform__actions .sumbit {
+  height: 48px;
+  float: right;
+  color: #FFF;
+  width: 45%;
+  font-weight: 700;
+  font-size: 16px;
+  background: #4CAF50;
+  margin-top: 7px;
+}
+/* line 2, ../../sass/partials/lib/loginForm.scss */
+.loginBox .simform__actions .sumbit:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 272, ../../sass/partials/lib/loginForm.scss */
+.loginBox .simform__actions-sidetext {
+  display: inline-block;
+  float: left;
+  width: 45%;
+  padding: 0 10px;
+  margin: 9px 0 0 0;
+  color: #8C979E;
+  text-align: center;
+  line-height: 24px;
+}
+/* line 2, ../../sass/partials/lib/loginForm.scss */
+.loginBox .simform__actions-sidetext:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 286, ../../sass/partials/lib/loginForm.scss */
+.loginBox .sminputs {
+  border-bottom: 1px solid #E5E5E5;
+}
+/* line 2, ../../sass/partials/lib/loginForm.scss */
+.loginBox .sminputs:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 290, ../../sass/partials/lib/loginForm.scss */
+.loginBox .sminputs .input {
+  display: block;
+  position: relative;
+  width: 45%;
+  height: 71px;
+  padding: 11px 24px;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: none;
+  float: left;
+  background-color: #FFF;
+  border-radius: 0;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/* line 307, ../../sass/partials/lib/loginForm.scss */
+.loginBox .sminputs .input.active {
+  background: #eee;
+}
+/* line 310, ../../sass/partials/lib/loginForm.scss */
+.loginBox .sminputs .input.active .hide-password {
+  background: #eee;
+}
+/* line 315, ../../sass/partials/lib/loginForm.scss */
+.loginBox .sminputs .input.full {
+  width: 100%;
+}
+/* line 319, ../../sass/partials/lib/loginForm.scss */
+.loginBox .sminputs .input label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+  line-height: 24px;
+}
+/* line 333, ../../sass/partials/lib/loginForm.scss */
+.loginBox .sminputs .input input {
+  postion: relative;
+  display: inline-block;
+  height: 24px;
+  font-size: 15px;
+  line-height: 19.2px;
+  color: #555;
+  border-radius: 4px;
+  vertical-align: middle;
+  box-shadow: none;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  color: rgba(75, 89, 102, 0.85);
+}
+/* line 354, ../../sass/partials/lib/loginForm.scss */
+.loginBox .sminputs .hide-password {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0 15px;
+  border-left: 1px solid #e4e4e4;
+  font-size: 14px;
+  background: #FFF;
+  overflow: hidden;
+  color: #444;
+  cursor: pointer;
+  margin-top: 12px;
+  line-height: 48px;
+}
+/* line 371, ../../sass/partials/lib/loginForm.scss */
+.loginBox html {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Lato", sans-serif;
+}
+/* line 377, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn, .loginBox .simform__actions .sumbit {
+  display: inline-block;
+  line-height: normal;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  outline-offset: 0;
+  font-weight: 400;
+  box-shadow: none;
+  min-width: 90px;
+  padding: 10px 14px;
+}
+/* line 393, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.full, .loginBox .simform__actions .full.sumbit {
+  width: 100%;
+}
+/* line 397, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.lg, .loginBox .simform__actions .lg.sumbit {
+  min-width: 125px;
+  padding: 17px 14px;
+  font-size: 22px;
+  line-height: 1.3;
+}
+/* line 404, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.sm, .loginBox .simform__actions .sm.sumbit {
+  min-width: 65px;
+  padding: 4px 12px;
+  font-size: 14px;
+}
+/* line 410, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.xs, .loginBox .simform__actions .xs.sumbit {
+  min-width: 45px;
+  padding: 2px 10px;
+  font-size: 10px;
+  line-height: 1.5;
+}
+/* line 417, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.circle, .loginBox .simform__actions .circle.sumbit {
+  overflow: hidden;
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  line-height: 1;
+  padding: 0;
+  border-radius: 50%;
+}
+/* line 426, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.circle.lg, .loginBox .simform__actions .circle.lg.sumbit {
+  width: 78px;
+  height: 78px;
+  min-width: 78px;
+}
+/* line 432, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.circle.sm, .loginBox .simform__actions .circle.sm.sumbit {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+}
+/* line 438, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.circle.xs, .loginBox .simform__actions .circle.xs.sumbit {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+}
+/* line 445, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn:focus, .loginBox .simform__actions .sumbit:focus, .loginBox .btn:active, .loginBox .simform__actions .sumbit:active, .loginBox .btn.active, .loginBox .simform__actions .active.sumbit, .loginBox .btn:active:focus, .loginBox .simform__actions .sumbit:active:focus, .loginBox .btn.active:focus, .loginBox .simform__actions .active.sumbit:focus {
+  outline: 0;
+  outline-offset: 0;
+  box-shadow: none;
+}
+/* line 456, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.red, .loginBox .simform__actions .red.sumbit {
+  background: #f44336;
+  color: #FFF;
+}
+/* line 460, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.red:active, .loginBox .simform__actions .red.sumbit:active, .loginBox .btn.red:focus, .loginBox .simform__actions .red.sumbit:focus {
+  background-color: #ef1d0d;
+}
+/* line 465, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.red:hover, .loginBox .simform__actions .red.sumbit:hover {
+  background-color: #f32c1e;
+}
+/* line 456, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.pink, .loginBox .simform__actions .pink.sumbit {
+  background: #E91E63;
+  color: #FFF;
+}
+/* line 460, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.pink:active, .loginBox .simform__actions .pink.sumbit:active, .loginBox .btn.pink:focus, .loginBox .simform__actions .pink.sumbit:focus {
+  background-color: #c61350;
+}
+/* line 465, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.pink:hover, .loginBox .simform__actions .pink.sumbit:hover {
+  background-color: #d81558;
+}
+/* line 456, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.purple, .loginBox .simform__actions .purple.sumbit {
+  background: #9C27B0;
+  color: #FFF;
+}
+/* line 460, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.purple:active, .loginBox .simform__actions .purple.sumbit:active, .loginBox .btn.purple:focus, .loginBox .simform__actions .purple.sumbit:focus {
+  background-color: #7b1f8a;
+}
+/* line 465, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.purple:hover, .loginBox .simform__actions .purple.sumbit:hover {
+  background-color: #89229b;
+}
+/* line 456, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.deep-purple, .loginBox .simform__actions .deep-purple.sumbit {
+  background: #673AB7;
+  color: #FFF;
+}
+/* line 460, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.deep-purple:active, .loginBox .simform__actions .deep-purple.sumbit:active, .loginBox .btn.deep-purple:focus, .loginBox .simform__actions .deep-purple.sumbit:focus {
+  background-color: #532f94;
+}
+/* line 465, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.deep-purple:hover, .loginBox .simform__actions .deep-purple.sumbit:hover {
+  background-color: #5c34a4;
+}
+/* line 456, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.indigo, .loginBox .simform__actions .indigo.sumbit {
+  background: #3F51B5;
+  color: #FFF;
+}
+/* line 460, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.indigo:active, .loginBox .simform__actions .indigo.sumbit:active, .loginBox .btn.indigo:focus, .loginBox .simform__actions .indigo.sumbit:focus {
+  background-color: #334293;
+}
+/* line 465, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.indigo:hover, .loginBox .simform__actions .indigo.sumbit:hover {
+  background-color: #3849a2;
+}
+/* line 456, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.blue, .loginBox .simform__actions .blue.sumbit {
+  background: #2196F3;
+  color: #FFF;
+}
+/* line 460, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.blue:active, .loginBox .simform__actions .blue.sumbit:active, .loginBox .btn.blue:focus, .loginBox .simform__actions .blue.sumbit:focus {
+  background-color: #0c7fda;
+}
+/* line 465, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.blue:hover, .loginBox .simform__actions .blue.sumbit:hover {
+  background-color: #0d8aee;
+}
+/* line 456, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.light-blue, .loginBox .simform__actions .light-blue.sumbit {
+  background: #03A9F4;
+  color: #FFF;
+}
+/* line 460, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.light-blue:active, .loginBox .simform__actions .light-blue.sumbit:active, .loginBox .btn.light-blue:focus, .loginBox .simform__actions .light-blue.sumbit:focus {
+  background-color: #028ac7;
+}
+/* line 465, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.light-blue:hover, .loginBox .simform__actions .light-blue.sumbit:hover {
+  background-color: #0398db;
+}
+/* line 456, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.cyan, .loginBox .simform__actions .cyan.sumbit {
+  background: #00BCD4;
+  color: #FFF;
+}
+/* line 460, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.cyan:active, .loginBox .simform__actions .cyan.sumbit:active, .loginBox .btn.cyan:focus, .loginBox .simform__actions .cyan.sumbit:focus {
+  background-color: #0093a6;
+}
+/* line 465, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.cyan:hover, .loginBox .simform__actions .cyan.sumbit:hover {
+  background-color: #00a5bb;
+}
+/* line 456, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.teal, .loginBox .simform__actions .teal.sumbit {
+  background: #009688;
+  color: #FFF;
+}
+/* line 460, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.teal:active, .loginBox .simform__actions .teal.sumbit:active, .loginBox .btn.teal:focus, .loginBox .simform__actions .teal.sumbit:focus {
+  background-color: #00685e;
+}
+/* line 465, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.teal:hover, .loginBox .simform__actions .teal.sumbit:hover {
+  background-color: #007d71;
+}
+/* line 456, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.green, .loginBox .simform__actions .green.sumbit {
+  background: #4CAF50;
+  color: #FFF;
+}
+/* line 460, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.green:active, .loginBox .simform__actions .green.sumbit:active, .loginBox .btn.green:focus, .loginBox .simform__actions .green.sumbit:focus {
+  background-color: #3e8f41;
+}
+/* line 465, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.green:hover, .loginBox .simform__actions .green.sumbit:hover {
+  background-color: #449d48;
+}
+/* line 456, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.light-green, .loginBox .simform__actions .light-green.sumbit {
+  background: #8BC34A;
+  color: #FFF;
+}
+/* line 460, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.light-green:active, .loginBox .simform__actions .light-green.sumbit:active, .loginBox .btn.light-green:focus, .loginBox .simform__actions .light-green.sumbit:focus {
+  background-color: #74a838;
+}
+/* line 465, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.light-green:hover, .loginBox .simform__actions .light-green.sumbit:hover {
+  background-color: #7eb73d;
+}
+/* line 456, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.lime, .loginBox .simform__actions .lime.sumbit {
+  background: #CDDC39;
+  color: #FFF;
+}
+/* line 460, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.lime:active, .loginBox .simform__actions .lime.sumbit:active, .loginBox .btn.lime:focus, .loginBox .simform__actions .lime.sumbit:focus {
+  background-color: #b6c423;
+}
+/* line 465, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.lime:hover, .loginBox .simform__actions .lime.sumbit:hover {
+  background-color: #c6d626;
+}
+/* line 456, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.yellow, .loginBox .simform__actions .yellow.sumbit {
+  background: #FFEB3B;
+  color: #FFF;
+}
+/* line 460, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.yellow:active, .loginBox .simform__actions .yellow.sumbit:active, .loginBox .btn.yellow:focus, .loginBox .simform__actions .yellow.sumbit:focus {
+  background-color: #ffe60d;
+}
+/* line 465, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.yellow:hover, .loginBox .simform__actions .yellow.sumbit:hover {
+  background-color: #ffe822;
+}
+/* line 456, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.amber, .loginBox .simform__actions .amber.sumbit {
+  background: #FFC107;
+  color: #FFF;
+}
+/* line 460, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.amber:active, .loginBox .simform__actions .amber.sumbit:active, .loginBox .btn.amber:focus, .loginBox .simform__actions .amber.sumbit:focus {
+  background-color: #d8a200;
+}
+/* line 465, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.amber:hover, .loginBox .simform__actions .amber.sumbit:hover {
+  background-color: #edb100;
+}
+/* line 456, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.orange, .loginBox .simform__actions .orange.sumbit {
+  background: #FF9800;
+  color: #FFF;
+}
+/* line 460, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.orange:active, .loginBox .simform__actions .orange.sumbit:active, .loginBox .btn.orange:focus, .loginBox .simform__actions .orange.sumbit:focus {
+  background-color: #d17d00;
+}
+/* line 465, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.orange:hover, .loginBox .simform__actions .orange.sumbit:hover {
+  background-color: #e68900;
+}
+/* line 456, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.deep-orange, .loginBox .simform__actions .deep-orange.sumbit {
+  background: #FF5722;
+  color: #FFF;
+}
+/* line 460, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.deep-orange:active, .loginBox .simform__actions .deep-orange.sumbit:active, .loginBox .btn.deep-orange:focus, .loginBox .simform__actions .deep-orange.sumbit:focus {
+  background-color: #f33a00;
+}
+/* line 465, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.deep-orange:hover, .loginBox .simform__actions .deep-orange.sumbit:hover {
+  background-color: #ff4409;
+}
+/* line 456, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.brown, .loginBox .simform__actions .brown.sumbit {
+  background: #795548;
+  color: #FFF;
+}
+/* line 460, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.brown:active, .loginBox .simform__actions .brown.sumbit:active, .loginBox .btn.brown:focus, .loginBox .simform__actions .brown.sumbit:focus {
+  background-color: #5c4137;
+}
+/* line 465, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.brown:hover, .loginBox .simform__actions .brown.sumbit:hover {
+  background-color: #694a3e;
+}
+/* line 456, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.grey, .loginBox .simform__actions .grey.sumbit {
+  background: #9E9E9E;
+  color: #FFF;
+}
+/* line 460, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.grey:active, .loginBox .simform__actions .grey.sumbit:active, .loginBox .btn.grey:focus, .loginBox .simform__actions .grey.sumbit:focus {
+  background-color: #878787;
+}
+/* line 465, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.grey:hover, .loginBox .simform__actions .grey.sumbit:hover {
+  background-color: #919191;
+}
+/* line 456, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.blue-grey, .loginBox .simform__actions .blue-grey.sumbit {
+  background: #607D8B;
+  color: #FFF;
+}
+/* line 460, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.blue-grey:active, .loginBox .simform__actions .blue-grey.sumbit:active, .loginBox .btn.blue-grey:focus, .loginBox .simform__actions .blue-grey.sumbit:focus {
+  background-color: #4d6570;
+}
+/* line 465, ../../sass/partials/lib/loginForm.scss */
+.loginBox .btn.blue-grey:hover, .loginBox .simform__actions .blue-grey.sumbit:hover {
+  background-color: #566f7c;
+}
+/* line 472, ../../sass/partials/lib/loginForm.scss */
+.loginBox .special {
+  color: #f44336;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.15s ease-out;
+}
+/* line 478, ../../sass/partials/lib/loginForm.scss */
+.loginBox .special:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0px;
+  left: 0;
+  background: #f00;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+/* line 491, ../../sass/partials/lib/loginForm.scss */
+.loginBox .special:hover {
+  transition: all 0.15s ease-out;
+}
+/* line 494, ../../sass/partials/lib/loginForm.scss */
+.loginBox .special:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+/* line 501, ../../sass/partials/lib/loginForm.scss */
+.loginBox #baseline {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 3, ../../sass/partials/loginPage.scss */
+.loginHeader {
+  height: 30%;
+  position: absolute;
+  top: 0;
+}
+
+/* line 1, ../../sass/partials/lib/formValidation.scss */
+.error {
+  border: 1px solid rgba(255, 0, 0, 0.58);
+  background-color: rgba(255, 0, 0, 0.06);
+}
+
+/* line 37, ../../sass/partials/base.scss */
+#appHeader {
+  background-color: #666666;
+  margin: 0;
+  height: 100%;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+/* line 49, ../../sass/partials/base.scss */
+.bordered {
+  border: 2px solid #ffffff;
+  border-radius: 100px;
+  box-shadow: 12px 5px 20px 10px rgba(224, 224, 224, 0.35);
+}
+
+/* line 56, ../../sass/partials/base.scss */
+.remove-all-styles {
+  all: revert;
+}
+
+/* line 60, ../../sass/partials/base.scss */
+html, body {
+  background-color: #f1f1f1;
+  font-family: 'Raleway', sans-serif;
+  margin: auto;
+  max-width: 800px;
+  padding: 0;
+  border: 0;
+  padding-bottom: 88px;
+}
+
+/* line 71, ../../sass/partials/base.scss */
+.main-content {
+  background-color: rgba(228, 228, 228, 0.26);
+  margin-bottom: 80px;
+  /* Add a top margin to avoid content overlay */
+}
+
+/* line 3, ../../sass/partials/lib/input.scss */
+input[type="text"] {
+  width: 100%;
+  font-size: 2em;
+}
+
+/* line 8, ../../sass/partials/lib/input.scss */
+.select {
+  width: 95%;
+  margin: auto;
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* line 19, ../../sass/partials/lib/input.scss */
+#addCritt {
+  height: 64px;
+  text-align: center;
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 26, ../../sass/partials/lib/input.scss */
+#addCrittIcon {
+  float: right;
+  padding-right: 10px;
+}
+
+/* line 32, ../../sass/partials/lib/input.scss */
+#deleteOneCritt {
+  float: left;
+  height: 64px;
+  text-align: center;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 41, ../../sass/partials/lib/input.scss */
+#removeCrittIcon {
+  z-index: 10;
+  padding-left: 10px;
+  float: left;
+}
+
+/* line 45, ../../sass/partials/lib/input.scss */
+.intensitiLabel {
+  width: 100%;
+}
+
+/* line 48, ../../sass/partials/lib/input.scss */
+#intContatiner {
+  text-align: center;
+}
+/* line 50, ../../sass/partials/lib/input.scss */
+#intContatiner .easy {
+  float: left;
+  padding-left: 20px;
+}
+/* line 54, ../../sass/partials/lib/input.scss */
+#intContatiner .hard {
+  float: right;
+  padding-right: 20px;
+}
+
+/* line 60, ../../sass/partials/lib/input.scss */
+#intensitetValues {
+  display: inline-block;
+}
+/* line 64, ../../sass/partials/lib/input.scss */
+#intensitetValues span {
+  padding-right: 37%;
+}
+
+/* line 70, ../../sass/partials/lib/input.scss */
+#rangeSliders p {
+  display: inline-block;
+}
+
+/* line 76, ../../sass/partials/lib/input.scss */
+textarea {
+  width: 90%;
+  /* padding: 10px; */
+  margin: auto;
+  margin-bottom: 10px;
+  display: block;
+  box-shadow: 4px -4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* line 87, ../../sass/partials/lib/input.scss */
+.settingsInput {
+  width: 80%;
+  float: right;
+  margin-top: 14px;
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+/* line 96, ../../sass/partials/lib/input.scss */
+.range-output {
+  display: inline-block;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  margin: 0;
+  font-weight: 900;
+  margin-left: 45%;
+}
+
+/* line 107, ../../sass/partials/lib/input.scss */
+.rangeMinContainer {
+  margin: 0;
+  width: 40%;
+  padding: 30px 0 0 0;
+  display: inline-block;
+}
+
+/* line 120, ../../sass/partials/lib/input.scss */
+.descBox {
+  display: block;
+  padding: 20px;
+}
+
+/* line 125, ../../sass/partials/lib/input.scss */
+form input[type=text] {
+  font-size: 0.8em;
+  text-align: center;
+  width: 95%;
+  padding: 0.3em;
+  padding-top: 0.8em;
+  margin: auto;
+  margin-bottom: 10px;
+  padding-bottom: 0.8em;
+  border: 1px solid #666666;
+  border-radius: 3px;
+  box-shadow: -7px 2px 20px 5px rgba(255, 255, 255, 0.18);
+}
+
+/* line 140, ../../sass/partials/lib/input.scss */
+input#horseName {
+  margin-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+/* line 1, ../../sass/partials/lib/popUps.scss */
+.altsBtn {
+  height: 44px;
+  width: 49%;
+  margin: 0px;
+  border: none;
+  display: inline-block;
+  font-weight: bolder;
+  color: white;
+}
+
+/* line 10, ../../sass/partials/lib/popUps.scss */
+#modalHeader {
+  background-color: #babac1;
+}
+/* line 12, ../../sass/partials/lib/popUps.scss */
+#modalHeader p {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 18, ../../sass/partials/lib/popUps.scss */
+.md-modal {
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  max-width: 630px;
+  min-width: 320px;
+  height: auto;
+  z-index: 2000;
+  visibility: hidden;
+  color: black;
+  backface-visibility: hidden;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #f7f7f7;
+}
+/* line 34, ../../sass/partials/lib/popUps.scss */
+.md-modal h1 {
+  padding: 1em;
+}
+
+/* line 39, ../../sass/partials/lib/popUps.scss */
+.md-show {
+  visibility: visible;
+}
+
+/* line 43, ../../sass/partials/lib/popUps.scss */
+.md-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  background-color: rgba(162, 162, 162, 0.45);
+  transition: all 0.3s;
+}
+
+/* line 56, ../../sass/partials/lib/popUps.scss */
+.md-show ~ .md-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* line 61, ../../sass/partials/lib/popUps.scss */
+.md-perspective,
+.md-perspective body {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 67, ../../sass/partials/lib/popUps.scss */
+.md-perspective body {
+  background: #222;
+  perspective: 600px;
+}
+
+/* line 72, ../../sass/partials/lib/popUps.scss */
+.container {
+  background: #e74c3c;
+  min-height: 100%;
+}
+
+/* Effect 5: newspaper */
+/* line 78, ../../sass/partials/lib/popUps.scss */
+.md-show.md-effect-1 ~ .md-overlay {
+  background: rgba(0, 127, 108, 0.8);
+}
+
+/* line 82, ../../sass/partials/lib/popUps.scss */
+.md-effect-1 .md-content {
+  transform: scale(0) rotate(720deg);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+/* line 88, ../../sass/partials/lib/popUps.scss */
+.md-show.md-effect-1 .md-content {
+  transform: scale(1) rotate(0deg);
+  opacity: 1;
+}
+
+/* line 93, ../../sass/partials/lib/popUps.scss */
+.Nej {
+  background-color: red;
+}
+
+/* line 97, ../../sass/partials/lib/popUps.scss */
+.Ja {
+  background-color: #0cc30c;
+}
+
+/* line 37, ../../sass/partials/base.scss */
+#appHeader {
+  background-color: #666666;
+  margin: 0;
+  height: 100%;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+/* line 49, ../../sass/partials/base.scss */
+.bordered {
+  border: 2px solid #ffffff;
+  border-radius: 100px;
+  box-shadow: 12px 5px 20px 10px rgba(224, 224, 224, 0.35);
+}
+
+/* line 56, ../../sass/partials/base.scss */
+.remove-all-styles {
+  all: revert;
+}
+
+/* line 60, ../../sass/partials/base.scss */
+html, body {
+  background-color: #f1f1f1;
+  font-family: 'Raleway', sans-serif;
+  margin: auto;
+  max-width: 800px;
+  padding: 0;
+  border: 0;
+  padding-bottom: 88px;
+}
+
+/* line 71, ../../sass/partials/base.scss */
+.main-content {
+  background-color: rgba(228, 228, 228, 0.26);
+  margin-bottom: 80px;
+  /* Add a top margin to avoid content overlay */
+}
+
+/* line 3, ../../sass/partials/lib/indexPage.scss */
+#indexHeader {
+  background: #ffffff;
+  width: 100%;
+  height: 74px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* line 11, ../../sass/partials/lib/indexPage.scss */
+#logginFacebook {
+  height: 84px;
+  display: block;
+  font-weight: bolder;
+  font-size: 4em;
+  color: white;
+  width: 20%;
+  max-width: 800px;
+  background-color: #3b5998;
+  border: none;
+  margin: 0;
+}
+
+/* line 25, ../../sass/partials/lib/indexPage.scss */
+.indexRegIcon {
+  float: left;
+  background-color: #3759ed;
+}
+
+/* line 30, ../../sass/partials/lib/indexPage.scss */
+.indexFbIcon {
+  margin: 5px;
+  float: left;
+  background-color: #3b5998;
+}
+
+/* line 1, ../../sass/partials/lib/rangeslider-js.scss */
+.rangeslider,
+.rangeslider__fill {
+  display: block;
+  -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* line 12, ../../sass/partials/lib/rangeslider-js.scss */
+.rangeslider {
+  background: #e6e6e6;
+  position: relative;
+}
+
+/* line 17, ../../sass/partials/lib/rangeslider-js.scss */
+.rangeslider--horizontal {
+  height: 20px;
+  width: 100%;
+}
+
+/* line 22, ../../sass/partials/lib/rangeslider-js.scss */
+.rangeslider--vertical {
+  width: 20px;
+  min-height: 150px;
+  max-height: 100%;
+}
+
+/* line 28, ../../sass/partials/lib/rangeslider-js.scss */
+.rangeslider--disabled {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+}
+
+/* line 33, ../../sass/partials/lib/rangeslider-js.scss */
+.rangeslider__fill {
+  background: #00ff00;
+  position: absolute;
+}
+
+/* line 37, ../../sass/partials/lib/rangeslider-js.scss */
+.rangeslider--horizontal .rangeslider__fill {
+  top: 0;
+  height: 100%;
+}
+
+/* line 41, ../../sass/partials/lib/rangeslider-js.scss */
+.rangeslider--vertical .rangeslider__fill {
+  bottom: 0;
+  width: 100%;
+}
+
+/* line 46, ../../sass/partials/lib/rangeslider-js.scss */
+.rangeslider__handle {
+  background: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4xIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g");
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(0, 0, 0, 0.1)));
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.1));
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.1));
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 67, ../../sass/partials/lib/rangeslider-js.scss */
+.rangeslider__handle:after {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjEzIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.13)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.13), rgba(255, 255, 255, 0));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.13), rgba(255, 255, 255, 0));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.13), rgba(255, 255, 255, 0));
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 88, ../../sass/partials/lib/rangeslider-js.scss */
+.rangeslider__handle:active, .rangeslider--active .rangeslider__handle {
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4xMiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, rgba(0, 0, 0, 0.12)));
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.12));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.12));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.12));
+}
+
+/* line 96, ../../sass/partials/lib/rangeslider-js.scss */
+.rangeslider--horizontal .rangeslider__handle {
+  top: -10px;
+  touch-action: pan-y;
+  -ms-touch-action: pan-y;
+}
+
+/* line 101, ../../sass/partials/lib/rangeslider-js.scss */
+.rangeslider--vertical .rangeslider__handle {
+  left: -10px;
+  touch-action: pan-x;
+  -ms-touch-action: pan-x;
+}
+
+/* line 107, ../../sass/partials/lib/rangeslider-js.scss */
+input[type="range"]:focus + .rangeslider .rangeslider__handle {
+  -moz-box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);
+  -webkit-box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);
+  box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);
+}
+
+/* line 1, ../../sass/partials/lib/addToUser.scss */
+.addToUserModalConatiner {
+  background-color: rgba(151, 157, 161, 0.42);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+}
+
+/* line 10, ../../sass/partials/lib/addToUser.scss */
+.addToUserModal {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  text-align: center;
+  /* margin: auto; */
+  width: 70%;
+  /* height: 20%; */
+  padding: 0;
+  background-color: white;
+  box-shadow: 16px 20px 20px rgba(81, 78, 78, 0.41);
+  border-radius: 15px;
+}
+
+/* line 25, ../../sass/partials/lib/addToUser.scss */
+form input[type=text].addToUserText {
+  width: 90%;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  margin: 10px;
+  border: none;
+  /* border-top: 1px green; */
+  box-shadow: 4px 5px rgba(0, 0, 0, 0.26);
+}
+
+/* line 35, ../../sass/partials/lib/addToUser.scss */
+.addToUserModalHeader {
+  background-color: #3759ed;
+  border-radius: 15px 15px 0 0;
+  font-size: 1.5em;
+  padding: 10px;
+  color: white;
+}
+/* line 42, ../../sass/partials/lib/addToUser.scss */
+.addToUserModalHeader img {
+  float: left;
+  border: none;
+}
+
+/* line 38, ../../sass/screen.scss */
+.hidden {
+  display: none;
+}

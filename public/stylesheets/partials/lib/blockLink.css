@@ -1,0 +1,37 @@
+/**
+ * Block Link
+ *
+ * A Faux block-level link. Used for when you need a block-level link with
+ * clickable areas within it as directly nesting a tags breaks things.
+ */
+/* line 9, ../../../../sass/partials/lib/blockLink.scss */
+.block-link {
+  position: relative;
+}
+
+/* line 13, ../../../../sass/partials/lib/blockLink.scss */
+.block-link a {
+  position: relative;
+  z-index: 1;
+}
+
+/* line 18, ../../../../sass/partials/lib/blockLink.scss */
+.block-link .block-link__overlay-link {
+  position: static;
+}
+/* line 20, ../../../../sass/partials/lib/blockLink.scss */
+.block-link .block-link__overlay-link:before {
+  bottom: 0;
+  content: "";
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 0;
+}
+/* line 33, ../../../../sass/partials/lib/blockLink.scss */
+.block-link .block-link__overlay-link:hover:before, .block-link .block-link__overlay-link:focus:before {
+  background: rgba(255, 255, 0, 0.2);
+}

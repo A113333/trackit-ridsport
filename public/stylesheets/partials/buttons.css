@@ -1,0 +1,155 @@
+/* line 37, ../../../sass/partials/base.scss */
+#appHeader {
+  background-color: #666666;
+  margin: 0;
+  height: 100%;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+/* line 49, ../../../sass/partials/base.scss */
+.bordered {
+  border: 2px solid #ffffff;
+  border-radius: 100px;
+  box-shadow: 12px 5px 20px 10px rgba(224, 224, 224, 0.35);
+}
+
+/* line 56, ../../../sass/partials/base.scss */
+.remove-all-styles {
+  all: revert;
+}
+
+/* line 60, ../../../sass/partials/base.scss */
+html, body {
+  background-color: #f1f1f1;
+  font-family: 'Raleway', sans-serif;
+  margin: auto;
+  max-width: 800px;
+  padding: 0;
+  border: 0;
+  padding-bottom: 88px;
+}
+
+/* line 71, ../../../sass/partials/base.scss */
+.main-content {
+  background-color: rgba(228, 228, 228, 0.26);
+  margin-bottom: 80px;
+  /* Add a top margin to avoid content overlay */
+}
+
+/* line 3, ../../../sass/partials/buttons.scss */
+.btn {
+  background-color: #3759ed;
+  padding: 8px;
+  border: none;
+  color: #f4f3ee;
+  margin: 0;
+  width: 100%;
+  font-weight: 900;
+  border-radius: 5px;
+  box-shadow: inset 3px 4px 20px 4px rgba(255, 255, 255, 0.33);
+}
+
+/* line 15, ../../../sass/partials/buttons.scss */
+.addOneCritt {
+  border: none;
+  font-size: 2em;
+  background-color: transparent;
+}
+
+/* line 23, ../../../sass/partials/buttons.scss */
+.removeOnCritt {
+  border-radius: 49%;
+  font-size: 2em;
+  padding: 8px 10px 8px 10px;
+  background: #ff1900;
+}
+
+/* line 31, ../../../sass/partials/buttons.scss */
+.settingsBtn {
+  font-weight: bolder;
+  color: white;
+  width: 100%;
+  background-color: #3759ed;
+  padding: 8px;
+  margin-bottom: 0.5em;
+  border: #3759ed;
+}
+
+/* line 42, ../../../sass/partials/buttons.scss */
+.btnArrow {
+  height: 2em;
+  float: right;
+}
+
+/* line 47, ../../../sass/partials/buttons.scss */
+.addHorseBtn {
+  width: 100%;
+  border-radius: 0;
+  margin: 0;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+/* line 55, ../../../sass/partials/buttons.scss */
+.addTraningBtn {
+  background-color: #f29b12;
+  padding: 8px;
+  margin-top: 0px;
+  opacity: 1;
+  border: none;
+  color: #ffffff;
+  margin: 0;
+  float: right;
+  width: 100%;
+  font-weight: 900;
+  margin-left: 2%;
+  font-size: 1.3em;
+  padding-top: 13px;
+  margin-bottom: 10px;
+}
+
+/* line 72, ../../../sass/partials/buttons.scss */
+.addTraningIcon {
+  height: 32px;
+  float: left;
+  margin-left: 5px;
+}
+
+/* line 80, ../../../sass/partials/buttons.scss */
+.addLoggBtn {
+  padding: 8px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin: 0;
+  width: 12%;
+  font-weight: 900;
+  font-size: 30px;
+  float: right;
+  z-index: 999;
+}
+
+/* line 94, ../../../sass/partials/buttons.scss */
+.deleteLoggBtn {
+  background-image: url("../../images/lib/icons/delete32.png");
+  height: 32px;
+  background-color: transparent;
+  float: left;
+  border: none;
+  padding: 5px 0 0 0;
+}
+
+/* line 104, ../../../sass/partials/buttons.scss */
+.deletePlanBtn {
+  background-image: url("../../images/lib/icons/delete32.png");
+  height: 32px;
+  background-color: transparent;
+  float: left;
+  border: none;
+  padding: 5px 0 0 0;
+}

@@ -1,0 +1,298 @@
+/* line 37, ../../../sass/partials/base.scss */
+#appHeader {
+  background-color: #666666;
+  margin: 0;
+  height: 100%;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+/* line 49, ../../../sass/partials/base.scss */
+.bordered {
+  border: 2px solid #ffffff;
+  border-radius: 100px;
+  box-shadow: 12px 5px 20px 10px rgba(224, 224, 224, 0.35);
+}
+
+/* line 56, ../../../sass/partials/base.scss */
+.remove-all-styles {
+  all: revert;
+}
+
+/* line 60, ../../../sass/partials/base.scss */
+html, body {
+  background-color: #f1f1f1;
+  font-family: 'Raleway', sans-serif;
+  margin: auto;
+  max-width: 800px;
+  padding: 0;
+  border: 0;
+  padding-bottom: 88px;
+}
+
+/* line 71, ../../../sass/partials/base.scss */
+.main-content {
+  background-color: rgba(228, 228, 228, 0.26);
+  margin-bottom: 80px;
+  /* Add a top margin to avoid content overlay */
+}
+
+/* line 3, ../../../sass/partials/calendar.scss */
+#mainCal {
+  margin-top: 10px;
+  background-color: rgba(228, 228, 228, 0.26);
+}
+
+/* line 9, ../../../sass/partials/calendar.scss */
+.calendar {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 19, ../../../sass/partials/calendar.scss */
+.controls {
+  color: white;
+  font-size: 1.5em;
+  background-color: rgba(26, 26, 26, 0.36);
+  text-align: center;
+  text-align: center;
+}
+/* line 31, ../../../sass/partials/calendar.scss */
+.controls .month {
+  padding: 12px 0;
+  text-align: center;
+}
+/* line 37, ../../../sass/partials/calendar.scss */
+.controls .clndr-previous-button {
+  margin-left: 5%;
+  color: #d7cfff;
+  float: left;
+}
+/* line 42, ../../../sass/partials/calendar.scss */
+.controls .clndr-next-button {
+  margin-right: 5%;
+  color: #d7cfff;
+  float: right;
+}
+
+/* line 58, ../../../sass/partials/calendar.scss */
+.clndr-grid .days-of-the-week {
+  width: 100%;
+  text-align: center;
+}
+
+/* line 65, ../../../sass/partials/calendar.scss */
+.headers {
+  border-bottom: 1px solid rgba(89, 89, 89, 0.1);
+}
+/* line 68, ../../../sass/partials/calendar.scss */
+.headers .day-header {
+  background-color: #f29b12;
+  text-align: center;
+  float: left;
+  font-size: 0.5em;
+  font-weight: 900;
+  width: 14.28571%;
+}
+
+/* line 84, ../../../sass/partials/calendar.scss */
+.day {
+  font-weight: 900;
+  color: white;
+  background-color: rgba(213, 213, 213, 0.28);
+  border-color: rgba(89, 89, 89, 0.1);
+  border-bottom: 1px solid rgba(89, 89, 89, 0.1);
+  width: 14.28571%;
+  float: left;
+  position: relative;
+  text-align: center;
+  height: inherit;
+  font-size: 0.5em;
+}
+/* line 97, ../../../sass/partials/calendar.scss */
+.day p {
+  padding: 6px;
+}
+/* line 101, ../../../sass/partials/calendar.scss */
+.day:hover {
+  background: #eee;
+}
+/* line 103, ../../../sass/partials/calendar.scss */
+.day.past, .day.p {
+  color: rgba(0, 0, 0, 0.1);
+}
+/* line 113, ../../../sass/partials/calendar.scss */
+.day.today p .day.today p, .day.today p .day.my-today p, .day.my-today p .day.today p, .day.my-today p .day.my-today p {
+  /* background-color: #ff0e3b; */
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 9px;
+  margin-top: 9px;
+  width: 36%;
+  height: 50%;
+  color: #f29b12;
+  margin-right: auto;
+  font-weight: bolder;
+  margin-left: auto;
+  /* padding: 5px; */
+  border: 2px solid #3759ed;
+  padding-top: 8px;
+}
+/* line 158, ../../../sass/partials/calendar.scss */
+.day .day-contents {
+  text-align: right;
+}
+
+/* line 164, ../../../sass/partials/calendar.scss */
+.empty, .adjacent-month, .my-empty, .my-adjacent-month {
+  border-bottom: 1px solid rgba(89, 89, 89, 0.1);
+}
+/* line 170, ../../../sass/partials/calendar.scss */
+.empty:hover, .adjacent-month:hover, .my-empty:hover, .my-adjacent-month:hover {
+  background: #ddd;
+}
+
+/* line 180, ../../../sass/partials/calendar.scss */
+:last-child .day, :last-child .my-day {
+  border-bottom: 1px solid rgba(89, 89, 89, 0.1);
+}
+/* line 185, ../../../sass/partials/calendar.scss */
+:last-child .empty, :last-child .my-empty {
+  border-bottom: 1px solid rgba(89, 89, 89, 0.1);
+}
+
+/* line 193, ../../../sass/partials/calendar.scss */
+.event-indicator {
+  background-color: #3BB7E8;
+  border-radius: 100%;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 15px;
+}
+/* line 203, ../../../sass/partials/calendar.scss */
+.event-indicator.adjacent-month, .event-indicator.inactive {
+  opacity: 0.3;
+}
+
+/* line 209, ../../../sass/partials/calendar.scss */
+.clickedDate p {
+  padding-top: 7px;
+  padding-right: 5px;
+  padding-bottom: 7px;
+  padding-left: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 36%;
+  height: 50%;
+  color: #f29b12;
+  margin-right: auto;
+  font-weight: bolder;
+  margin-left: auto;
+  /* padding: 5px; */
+  border: 1px solid transparent;
+  border-radius: 100%;
+}
+
+/* line 228, ../../../sass/partials/calendar.scss */
+.day.today {
+  background-color: white;
+  color: black;
+}
+
+/* line 233, ../../../sass/partials/calendar.scss */
+.day.event {
+  background-color: rgba(96, 158, 100, 0.58);
+}
+
+/* line 237, ../../../sass/partials/calendar.scss */
+#eventInfo {
+  clear: both;
+  background-color: rgba(211, 211, 211, 0.59);
+}
+
+/* line 241, ../../../sass/partials/calendar.scss */
+#plansAndLoggContainer {
+  padding-bottom: 20px;
+  background-color: rgba(228, 228, 228, 0.26);
+  margin-top: 5px;
+}
+
+/* line 246, ../../../sass/partials/calendar.scss */
+.planCardHeader {
+  text-align: center;
+  background-color: rgba(223, 223, 223, 0.32);
+  padding: 10px;
+}
+
+/* line 252, ../../../sass/partials/calendar.scss */
+p.cardHeaderHeadline {
+  font-weight: bolder;
+  text-decoration-line: underline;
+}
+
+/* line 257, ../../../sass/partials/calendar.scss */
+.loggCardCal {
+  overflow: hidden;
+  /* display: inline-block; */
+  width: 80%;
+  margin: auto;
+  padding-bottom: 10px;
+  /* padding-top: 10px; */
+  margin-bottom: 10px;
+  clear: both;
+  border-radius: 10px;
+  background-color: white;
+  display: block;
+  box-shadow: 7px 9px 20px rgba(255, 255, 255, 0.33);
+  margin-top: 10px;
+  /* margin-top: 135px; */
+  margin-top: 10px;
+  /* margin-top: 135px; */
+}
+/* line 273, ../../../sass/partials/calendar.scss */
+.loggCardCal p {
+  padding: 1px;
+  margin: 3px;
+}
+
+/* line 279, ../../../sass/partials/calendar.scss */
+.pushForward {
+  position: relative;
+}
+
+/* line 280, ../../../sass/partials/calendar.scss */
+.pushForward:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* line 290, ../../../sass/partials/calendar.scss */
+.planCard {
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.78);
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  clear: both;
+}
+/* line 299, ../../../sass/partials/calendar.scss */
+.planCard p {
+  margin: 0;
+  padding: 10px 0 0 0;
+  margin: 5px 0 5px 0;
+}

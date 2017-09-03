@@ -1,0 +1,12 @@
+    {{#each this.criterias}}
+
+        <div class="crittGrp">
+            <label for="critts">Bedömningskriterie </label>
+            <select class="critts critt{{@index}}"   name="critt{{@index}}" id="critts" data-rule-required="true">
+                               <option selected="" value="">Välj..</option>
+        {{#each this}}
+<option>{{this}}</option>
+        {{/each}}
+            </select>
+        </div>
+    {{/each}}

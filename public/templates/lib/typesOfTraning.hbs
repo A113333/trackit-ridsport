@@ -1,0 +1,13 @@
+{{#each this.arr}}
+    <div class="objectContainer">
+        <div class="objectHeader">
+        <img src="./images/lib/icons/delete.png" class="deleteIcon" id="{{this._id}}">
+        <input type="text" class="settingsInput noClick" id="{{this.name}}" name="{{this.name}}" value="{{this.name}}">
+
+        <span>Beskrivning: {{this.desc}} </span>
+        <br>
+    </div>
+
+{{/each}}
+<div id ="newTypeOfTraningContainer"></div>
+<button type="button" id="showAddToUser" class="button"> <img src="./images/lib/icons/add.png" class="addIconSmall" id="addIconTypeOfTraning"> </button>

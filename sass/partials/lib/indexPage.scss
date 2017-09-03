@@ -1,0 +1,34 @@
+@import "../base";
+
+#indexHeader {
+  background: #ffffff;
+  width: 100%;
+  height: 74px;
+  border-bottom: 1px solid #eaeaea;
+
+}
+
+#logginFacebook{
+  height: 84px;
+  display: block;
+  font-weight: bolder;
+  font-size: 4em;
+  color: white;
+  width: 20%;
+  max-width: 800px;
+  background-color: $facebook-color;
+  border: none;
+  margin: 0;
+}
+
+
+.indexRegIcon{
+  float: left;
+  background-color: $btn-color;
+}
+
+.indexFbIcon{
+  margin: 5px;
+  float: left;
+  background-color: #3b5998;
+}

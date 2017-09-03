@@ -1,0 +1,100 @@
+
+<br>
+<br>
+<div class ="addTraningForm">
+
+
+
+    <div id="calenderAddTraning">
+
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <form name="addTraning" action = "" id="addTraning">
+
+<div class=flatpickr>
+    <input type="text"  id="datepicker" class="datepickerAddTraning" placeholder="Select Date.." data-input> <!-- input is mandatory -->
+
+    <a class="input-button" title="toggle" data-toggle>
+        <i class="icon-calendar"></i>
+    </a>
+
+    <a class="input-button" title="clear" data-clear>
+        <i class="icon-close"></i>
+    </a>
+</div>
+        <br>
+        <br>
+
+
+
+
+        <div class="form-group">
+            <label for="type">Välj Typ av träning</label>
+            <select class="form-control" id="type"  name="type">
+
+
+                <option>Hoppning</option>
+                <option>Markarbete</option>
+                <option>Bomjobb</option>
+                <option>Dressyr</option>
+                <option>Uterit</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="type">Välj Häst</label>
+            <select class="form-control" id="horse"  name="häst">
+                {{#each data.user.horses}}
+
+                    <option>{{this.name}} </option>
+                {{/each}}
+            </select>
+        </div>
+
+        {{#each data.user.kriterier}}
+
+
+            <fieldset class="ratings">
+                <legend> {{this}}</legend>
+                <input
+                        type="range"
+                        min="0"
+                        max="100"
+                        step="1"
+                        value="50"
+                        data-orientation="horizontal"
+                        class="rsTest"
+                        name="{{this}}"
+                >
+<output class="rangeOutput"> </output>
+            </fieldset>
+
+        {{/each}}
+
+        <!--<button class="submitBtn" type="submit" formmethod="post" formaction="/addTraning/{{horse.name}}"><img src="/images/icons/add.png" alt="Submit" class="iconToBtn" style="height:100px;width:100px;"></button>-->
+        <button class="postTraningBtn"> Lägg till träning </button>
+
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/10.0.0/nouislider.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.0.2/rangeslider.min.css">
+
+</div>
+
+
+

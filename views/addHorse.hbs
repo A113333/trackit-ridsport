@@ -1,43 +1,114 @@
 <h1>{{title}}</h1>
 
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.2/css/lightgallery.css" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.2/js/lightgallery.js"></script>
+
+
+<div class="containerForm">
 
 
 
-    <div id="addHorseForm">
-        <form action="/addHorse" method="post">
+    <form>
 
-            <div id="sex-buttons">
+        <div class="group">
+            <input type="text" name="name" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Hästens Namn</label>
+        </div>
 
-                <button type="button" class="sex" value="mare" ><label> Sto </label>
-                </button>
-                <button type="button" class="sex" value="gelding"  ><label> Val</label>
-                </button>
-                <button type="button"  class="sex" value="stallion"  ><label> Hig </label>
-                </button><br>
+        <div class="group">
+            <input type="text" required name="age" >
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Hästens Ålder</label>
+        </div>
 
-            </div>
-
-            <input type="text" name="name" placeholder="Hästens Namn"><br>
-
-
-
-            <input type="text" name="age" placeholder="Hästens Ålder"><br>
-
-            <input type="text" name="type" placeholder="Hästens Inriktning"><br>
+        <div class="form-group">
+            <label for="type">Hästens Inriktning</label>
+            <select class="form-control" id="type">
 
 
-            <input type="text" class ="addHorseInputText" name="criteria1" placeholder="Bedömingspunkt 1"><br>
-            <input type="text" class ="addHorseInputText" name="criteria2" placeholder="Bedömingspunkt 2"><br>
-            <input type="text" class ="addHorseInputText" name="criteria3" placeholder="Bedömingspunkt 3"><br>
-            <input type="text" class ="addHorseInputText" name="criteria4" placeholder="Bedömingspunkt 4"><br>
-            <input type="text" class ="addHorseInputText" name="criteria5" placeholder="Bedömingspunkt 5"><br>
+                <option>Hoppning</option>
+                <option>Dressyr</option>
+                <option>Fälttävlan</option>
+                <option>Distansritt</option>
+                <option>Övrigt</option>
+            </select>
+        </div>
 
 
+        <div class="form-group">
+            <label for="type">Bedömningskriterie 1</label>
+            <select class="form-control" id="type"  name="criteria1">
 
 
+                <option>Takt</option>
+                <option>Känsla</option>
+                <option>Framåtbjudning</option>
+                <option>Avspändhet</option>
+                <option>Lösgjordhet</option>
+            </select>
+        </div>
 
-            <input type="submit" name="addHorse" value="Lägg Till"><br>
-        </form>
+        <div class="form-group">
+        <label for="type">Bedömningskriterie 2</label>
+        <select class="form-control" id="type"  name="criteria2">
 
+
+            <option>Takt</option>
+            <option selected="selected">Känsla</option>
+            <option>Framåtbjudning</option>
+            <option>Avspändhet</option>
+            <option>Lösgjordhet</option>
+        </select>
     </div>
+
+        <div class="form-group">
+            <label for="type">Bedömningskriterie 3</label>
+            <select class="form-control" id="type"  name="criteria3">
+
+
+                <option>Takt</option>
+                <option>Känsla</option>
+                <option selected="selected">Framåtbjudning</option>
+                <option>Avspändhet</option>
+                <option>Lösgjordhet</option>
+            </select>
+        </div>
+
+
+        {{>chooseIcon}}
+
+
+        <div class="row">
+            <div class="large-12 columns">
+                <ul class="small-block-grid-2 medium-block-grid-3" id="lightgallery">
+                    <ul id="responsive" class="cs-hidden">
+                        <li class="item-a"> <img class="iconImg img-circle" src="/images/icons/horse1.png"> </img> </li>
+                        <li class="item-b"> <img class="iconImg img-circle" src="/images/icons/horse2.png"> </img> </li>
+                        <li class="item-c"><img class="iconImg img-circle" src="/images/icons/horse3.png"> </img></li>
+                        <li class="item-d"><img class="iconImg img-circle" src="/images/icons/horse4.png"> </img></li>
+                        <li class="item-e"><img class="iconImg img-circle" src="/images/icons/horse6.png"> </img></li>
+                        <li class="item-e"><img class="iconImg img-circle" src="/images/icons/horse4.png"> </img></li>
+                        <li class="item-e"><img class="iconImg img-circle" src="/images/icons/horse5.png"> </img></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <button class="submitBtn" type="submit" formmethod="post" formaction="/addHorse">OK</button>
+
+    </form>
+    <script type="text/javascript" src="/javascripts/sly.js"></script>
+    <script type="text/javascript" src="/javascripts/chooseIcon.js"></script>
+</div>

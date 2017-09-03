@@ -1,0 +1,8 @@
+    <div class="crittGrp">
+        <select class="critts select" name="critt{{this.counter}}" data-rule-required="true">
+            <option selected="" value="">Bedömningspunkt</option>
+            {{#each this.crittArr}}
+                <option>{{this.name}}</option>
+            {{/each}}
+        </select>
+    </div>

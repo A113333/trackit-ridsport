@@ -1,0 +1,37 @@
+/**
+ * Block Link
+ *
+ * A Faux block-level link. Used for when you need a block-level link with
+ * clickable areas within it as directly nesting a tags breaks things.
+ */
+
+
+.block-link {
+  position: relative;
+}
+
+.block-link a {
+  position: relative;
+  z-index: 1;
+}
+
+.block-link .block-link__overlay-link {
+  position: static;
+  &:before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    white-space: nowrap;
+    z-index: 0;
+  }
+  &:hover,
+  &:focus {
+    &:before {
+      background: rgba(255,255,0, .2);
+    }
+  }
+}

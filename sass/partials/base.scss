@@ -1,0 +1,74 @@
+
+@import "compass";
+
+// Font weights
+$light: 100;
+$regular: 400;
+$bold: 600;
+
+
+
+// Base Font
+$base-font-family: sans-serif;
+$base-font-weight: $regular;
+$base-font-size: 13px;
+$base-line-height: 1.4px;
+$clndr-border: 1px solid rgba(89, 89, 89, 0.1);
+
+
+$myEventColor:rgba(99, 207, 48, 0.72);
+$background-greyColor: rgba(228, 228, 228, 0.26);
+$addColor: rgba(59, 59, 59, 0.7); //rgba(57, 191, 2, 0.88);  en grön färg
+$blue-color: #3759ed;
+$red-color: #dd4b39;
+$orange-color: rgb(242, 155, 18);
+$btn-color: #3759ed;
+$white-color:rgba(216, 216, 216, 0.1);
+$facebook-color: #3b5998;
+// Fixed Font
+$fixed-font-family: monospace;
+$fixed-font-size: 85%;
+$fixed-line-height: $base-line-height;
+
+// Headings
+$header-font-weight: $bold;
+
+
+#appHeader {
+  background-color: #666666;
+  margin: 0;
+  height: 100%;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+.bordered {
+  border: 2px solid #ffffff;
+  border-radius: 100px;
+  box-shadow: 12px 5px 20px 10px rgba(224, 224, 224, 0.35);
+}
+
+
+.remove-all-styles {
+  all: revert;
+}
+
+html, body
+{
+background-color: #f1f1f1;
+  font-family: 'Raleway', sans-serif;;
+  margin: auto;
+  max-width: 800px;
+  padding: 0;
+  border: 0;
+  padding-bottom: 88px;
+}
+
+.main-content {
+  background-color: $background-greyColor;
+  margin-bottom: 80px; /* Add a top margin to avoid content overlay */
+}

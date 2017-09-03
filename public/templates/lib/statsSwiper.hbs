@@ -1,0 +1,49 @@
+
+<ul id="light-slider">
+        {{#each this}}
+
+            {{#if this.horseLogg.totalScore}}
+            <li>
+            <div class="loggCard" data-traning="{{this}}">
+            <div class="loggcardHeader">
+                <span>{{this.date}}   </span> <br>
+                <span>{{this.horse}} {{this.type}}    </span> <br>
+            </div>
+                <div class="horseStats">
+                    <span>Häst poäng:  </span>
+                    <span>Totalt: {{this.horseLogg.totalScore}}</span>
+                    <span>Medel: {{this.horseLogg.average}}</span>
+                    <span>Poängsättning : {{#each this.horseLogg.scores}} {{this.critt}}: {{this.pts}} {{/each}}</span>
+                    <span> Intensitet: {{this.intensitet}}%</span>
+                    <span>Längd: {{this.lenght}}min</span>
+                    <span>Kommentarer: {{this.horseLogg.comments}}</span>
+                </div>
+                {{#if this.userLogg.totalScore}}
+            <div class="userStats">
+                <span class="userStatsHeader"> Ryttar:</span>
+                <span>Totalt: {{this.userLogg.totalScore}}</span>
+                <span>Medel: {{this.userLogg.average}}</span>
+                <span>Poängsättning : {{#each this.userLogg.scores}} {{this.critt}}: {{this.pts}} {{/each}}</span>
+                </div>
+
+                {{/if}}
+            </li>
+            {{else}}
+                <li>
+                    <div class="loggCard" data-traning="{{this}}">
+                        <div class="loggcardHeader">
+                    <span>Planering för {{this.date}}</span>
+                        </div>
+                <div class="statsLogg {{this.eventType}}">
+                    <span>Date: <b>{{this.date}}</b> </span> <br>
+                    <span>Häst: <b>{{this.horse}}</b></span> <br>
+                    <span>Träningstyp<b> {{this.type}}</b></span> <br>
+                    <span> Intensitet:<b> {{this.intensitet}} %</b> Längd: <b>{{this.lenght}} min</b></span>
+                </div>
+                    </div>
+                </li>
+
+            {{/if}}
+            </div>
+        {{/each}}
+</ul>

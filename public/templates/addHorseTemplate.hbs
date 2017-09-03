@@ -1,0 +1,113 @@
+  <div id="addHorse">
+
+      <div id="error-note">
+          <span></span>
+      </div>
+    <form id="addHorseForm">
+            <input type="text" name="name" id="horseName" placeholder="Hästens Namn">
+
+        <div class="ageGrp select">
+            <label></label>
+            <select class="select" name="age" id="horseAge"data-rule-required="true">
+                <option selected="" value="">Födelseår</option>
+                <option>1997</option>
+                <option>1998</option>
+                <option>1999</option>
+                <option>2000</option>
+                <option>2001</option>
+                <option>2002</option>
+                <option>2002</option>
+                <option>2003</option>
+                <option>2004</option>
+                <option>2005</option>
+                <option>2006</option>
+                <option>2007</option>
+                <option>2008</option>
+                <option>2009</option>
+                <option>2010</option>
+                <option>2011</option>
+                <option>2012</option>
+                <option>2013</option>
+                <option>2014</option>
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+            </select>
+        </div>
+
+
+
+        <div class="typeGrp select">
+            <select class="select" id="horseType" name="horseType" data-rule-required="true">
+                <option selected="" value="">Huvudgren</option>
+                <option>Hoppning</option>
+                <option>Dressyr</option>
+                <option>Fälttävlan</option>
+                <option>Distansritt</option>
+                <option>Western</option>
+                <option>Övrigt</option>
+            </select>
+        </div>
+
+
+<!--        <div id="critts">
+            <h5> Bedömningspunkter:</h5> <img src="/images/lib/icons/help.png">
+            <div id="defaultCritts">
+
+                <div class="crittGrp">
+                    <select class="critts select"   name="critt" data-rule-required="true">
+                        <option selected="" value="">Välj..</option>
+                        {{#each this.kriterier}}
+                            <option>{{this}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+
+                <div class="crittGrp">
+                    <select class="critts select"   name="critt" data-rule-required="true">
+                        <option selected="" value="">Välj..</option>
+                        {{#each this.kriterier}}
+                            <option>{{this}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+
+            </div>
+
+
+
+            <button  type="button" class="btn addOneCritt">
+                <img src="./images/lib/icons/add.png" class="addIcon" id="addIcon">
+            </button>
+
+            <button  type="button" class="btn removeOnCritt">
+                <img src="./images/lib/icons/delete.png" class="deleteIcon" id="addIcon">
+            </button>
+
+
+        </div>-->
+
+        <div class="chooseImg">
+</div>
+
+
+    <div class="addParrents">
+
+
+        <input type="text" name="e" id="e" placeholder="Hästens far" data-rule-required="true" >
+
+        <input type="text" name="u" id="u" placeholder="Hästens mor" data-rule-required="true" >
+
+        <input type="text" name="ue" id="ue" placeholder="Hästens morfar" data-rule-required="true" >
+
+
+    </div>
+
+
+        <button  type="button" class="btn addHorseBtn">
+            Spara häst
+        </button>
+
+
+    </form>
+  </div>

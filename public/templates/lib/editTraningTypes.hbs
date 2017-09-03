@@ -1,0 +1,13 @@
+{{#each this}}
+    <div class="selfCrittsDiv">
+
+        <input type="text" class="settingsInput noClick" id="{{this}}" name="{{this}}" value="{{this}}">
+        <img src="./images/lib/icons/delete.png" class="deleteIcon" id="{{this._id}}">
+        <input type="text" class="hidden" value="{{this._id}}">
+        <span>Beskrivning: {{this.desc}} </span>
+
+        <br>
+    </div>
+
+{{/each}}
+<img src="./images/lib/icons/add.png" class="addIcon" id="">

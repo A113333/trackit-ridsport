@@ -1,0 +1,20 @@
+<script type="x-tmpl-mustache" id="calendar-tmpl">
+    <div class="controls">
+        <span class="clndr-previous-button">prev</span>
+        <span class="month">{{month}}</span>
+        <span class="year">{{year}}</span>
+        <span class="clndr-next-button">next</span>
+    </div>
+    <div class="days-container">
+        <div class="days">
+            <div class="headers">
+                {{#daysOfTheWeek}}
+                    <div class="day-header">{{.}}</div>
+                {{/daysOfTheWeek}}
+            </div>
+            {{#days}}
+                <div class="{{classes}}" id="{{id}}">{{day}}</div>
+            {{/days}}
+        </div>
+    </div>
+</script>

@@ -1,0 +1,41 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+// Modules and Variables
+// @import "/partials/base";
+
+
+// Partials
+@import "./partials/base";
+@import "./partials/msg";
+@import "./partials/nav";
+@import "./partials/iconSelect";
+@import "./partials/calendar";
+@import "./partials/allHorses";
+@import "./partials/addHorse";
+@import "./partials/buttons";
+@import "./partials/addPlan";
+@import "./partials/stats";
+@import "./partials/user";
+
+
+@import "./partials/loginPage";
+
+// @import "./partials/calendar";
+@import "./partials/lib/formValidation";
+@import "./partials/lib/input";
+@import "./partials/lib/popUps";
+@import "./partials/lib/indexPage";
+@import "./partials/lib/bigScreen";
+@import "./partials/lib/rangeslider-js";
+@import "./partials/lib/addToUser";
+.page {
+
+}
+
+.hidden{
+  display: none;
+}
+

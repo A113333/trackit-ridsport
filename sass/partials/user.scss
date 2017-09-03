@@ -1,0 +1,71 @@
+@import "./partials/base";
+
+
+#showAddToUser {
+  border: none;
+  width: 70%;
+  border-radius: 25px;
+  margin: auto;
+  margin-bottom: 15px;
+  display: block;
+  padding: 10px;
+}
+
+.objectContainer{
+  background-color: white;
+  margin: 0 20px 20px 20px;
+  box-shadow: -9px 4px 20px rgba(235, 235, 235, 0.4);
+  border-radius: 20px;
+}
+
+.objectHeader{
+  border-radius: 10px 10px 0 0;
+  height: 42px;
+  background-color: #3759ed;
+  color: white;
+  font-weight: bolder;
+}
+
+.addToUser{
+  color: white;
+  background-color: rgb(242, 155, 18);
+  border: none;
+  width: 70%;
+  border-radius: 25px;
+  margin: auto;
+  display: block;
+  padding: 10px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+
+.addToUserText {
+  display: block;
+  width: 70%;
+  padding: 10px 0 0 30px;
+  margin: 0;
+  float: left;
+}
+
+.smallDeleteIcon{
+  padding: 5px;
+}
+
+.noClick{
+  display: block;
+  background-color: transparent;
+}
+
+.userCritt{
+  padding: 10px;
+  color: white;
+  position: relative;
+  top: 0;
+  display: block;
+  /* float: right; */
+  text-align: center;
+  float: right;
+  padding-right: 40%;
+  /* width: 00%; */
+
+}
