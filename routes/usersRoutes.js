@@ -6,7 +6,7 @@ ObjectId = mongoose.ObjectID;
 
 var User = require('../models/userModel.js');
 
-
+// get www...../user
 router.get("/", function(req, res, next) {
 
   if (req.user === undefined) {

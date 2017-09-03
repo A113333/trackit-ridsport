@@ -83,43 +83,13 @@ $(document).ready(function () {
   window.scrollTo(0,0);
   console.log(window.location.hash);
 
-  if (window.location.pathname == '/') {
-      console.log('window path /');
-    $(document).ready(function() {
-
-
-      $("#regBtn").click(function () {
-        console.log("onclick showlogin");
-        $("#registerBox").toggleClass("hidden");
-        $("#fbLoginBtn").toggleClass("hidden")
-
-      });
-
-
-        $('#logginFacebook').click(function () {
-          console.log("loggar in m fbook");
-
-          window.location = refs.fbCbUrl;
-
-        });
-
-        $('#logginGoogle').click(function () {
-          console.log("loggar in m google")
-        });
-
-        // to hide bottom navbar
-        $( ".bottomNavBar" ).addClass( "hidden" );
-      });
-    }
 // för att restatt appen  window.location.pathname = '/home'
     if (window.location.pathname == '/home') {
-      $(document).ready(function(){
         console.log("document ready");
         $( "#appHeader" ).html("Kalender" );
       addNavOnClicks();
       if(window.location.hash === "#cal"){
      printHome();}
-    });
     }
 });
 // prints the sutiable page on haschange

@@ -8,6 +8,7 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var flash    = require('connect-flash');
 const session = require('express-session');
+var MongoDBStore = require('connect-mongodb-session')(session);
 //loading process env
 process.env.NODE_ENV = "production";
 

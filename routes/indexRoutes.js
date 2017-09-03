@@ -77,7 +77,7 @@ router.get('/logout', function (req, res, next) {
 // route for facebook authentication and login
 router.get('/auth/facebook', passport.authenticate('facebook', { scope: ['email'] }));
 
-// handle the callback after facebook has authenticated the user
+// efter att fb har auth så körs denna
 router.get('/auth/facebook/callback',
   passport.authenticate('facebook', {
     successRedirect: '/home#cal',
@@ -113,52 +113,11 @@ router.get('/connect/facebook/callback',
 
 
 
-router.get('/home', function (req, res, next) {
+router.get('/home', router.isLoggedIn, function (req, res, next) {
   if (req.user === undefined) {
     console.log('inte inloggad');
   }
     res.render('inApp.hbs', { user: req.user});
 });
-
-
-
-// måste anropas med en array med users localHorses
-router.get('/plan', function (req, res, next) {
-    var email = req.user.email;
-    var horses;
-    User.findOne({ email: email }, function (err, user) {
-        if (err) return handleError(err);
-
-        var usern = user;
-        console.log(user);
-        res.render('plan.hbs', { user: usern });
-      });
-
-  });
-
-
-// var id = req.user.email;
-//
-// if (req.user.email === undefined) {
-//   id =  req.user.facebook.email;
-// }
-//
-// var localHorses;
-// User.findOne({ email: id }, function (err, user) {
-//   if (err) return console.log(err, message);
-//
-//   var usern = user;
-//   console.log(user);
-//   if (usern.plan === undefined) {
-//     return 'no plans';
-//   }
-//
-//   res.status(200).send({ userplans: usern.plans });
-//
-// });
-
-//});
-
-// planText   comments
 
 module.exports = router;
