@@ -2,178 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72b7f579-ed97-4e7d-a89f-f0a1f21830d2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/addHorseForm.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/header.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/ie.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/print.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/rating.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/screen.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/npm-debug.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/png/bginstättning.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/png/header.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/png/sum1576.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pt folder" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/addHorseForm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/mainJs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/addHorseForm.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/header.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/rating.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/CLNDR-master.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/CLNDR-master/CLNDR-master/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/CLNDR-master/CLNDR-master/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/CLNDR-master/CLNDR-master/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/CLNDR-master/CLNDR-master/ISSUE_TEMPLATE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/CLNDR-master/CLNDR-master/LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/CLNDR-master/CLNDR-master/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/CLNDR-master/CLNDR-master/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/CLNDR-master/CLNDR-master/clndr.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/CLNDR-master/CLNDR-master/demo/css/clndr.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/CLNDR-master/CLNDR-master/demo/css/clndr.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/CLNDR-master/CLNDR-master/demo/css/clndr.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/CLNDR-master/CLNDR-master/demo/demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/CLNDR-master/CLNDR-master/demo/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/CLNDR-master/CLNDR-master/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/CLNDR-master/CLNDR-master/src/clndr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/CLNDR-master/CLNDR-master/tests/test.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/CLNDR-master/CLNDR-master/tests/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/Calendario/README.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/Calendario/css/calendar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/Calendario/css/custom_1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/Calendario/css/custom_2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/Calendario/css/demo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/Calendario/font/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/Calendario/font/README.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/Calendario/font/fontawesome-selected.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/Calendario/font/fontawesome-selected.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/Calendario/font/fontawesome-selected.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/Calendario/font/fontawesome-selected.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/Calendario/images/bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/Calendario/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/Calendario/index2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/Calendario/js/data.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/Calendario/js/jquery.calendario.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/Calendario/js/modernizr.custom.63321.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/__MACOSX/._Calendario" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/__MACOSX/Calendario/._.DS_Store" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/__MACOSX/Calendario/._README.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/__MACOSX/Calendario/._css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/__MACOSX/Calendario/._font" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/__MACOSX/Calendario/._images" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/__MACOSX/Calendario/._index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/__MACOSX/Calendario/._index2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/__MACOSX/Calendario/._js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/__MACOSX/Calendario/css/._.DS_Store" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/__MACOSX/Calendario/css/._calendar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/__MACOSX/Calendario/css/._custom_1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/__MACOSX/Calendario/css/._custom_2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/__MACOSX/Calendario/css/._demo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/__MACOSX/Calendario/font/._LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/__MACOSX/Calendario/font/._README.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/__MACOSX/Calendario/font/._fontawesome-selected.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/__MACOSX/Calendario/font/._fontawesome-selected.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/__MACOSX/Calendario/font/._fontawesome-selected.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/__MACOSX/Calendario/font/._fontawesome-selected.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/__MACOSX/Calendario/images/._.DS_Store" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/__MACOSX/Calendario/images/._bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/__MACOSX/Calendario/js/._.DS_Store" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/__MACOSX/Calendario/js/._data.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/Calendario/__MACOSX/Calendario/js/._modernizr.custom.63321.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/CommonJSAutoComplete.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/NodeJS-173.141.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/homemedlinkaccountsosv.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/jscs-plugin.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/knappar.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/knappar/license/license.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/knappar/png/001-delete-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/knappar/png/002-delete.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/knappar/png/003-add-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/knappar/png/004-add.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/knappar/png/005-plus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/knappar/png/006-add-button-inside-black-circle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/contributing.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/cS-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/cS-10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/cS-11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/cS-12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/cS-13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/cS-14.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/cS-15.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/cS-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/cS-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/cS-4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/cS-5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/cS-6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/cS-7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/cS-8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/cS-9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/thumb/cS-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/thumb/cS-10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/thumb/cS-11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/thumb/cS-12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/thumb/cS-13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/thumb/cS-14.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/thumb/cS-15.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/thumb/cS-16.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/thumb/cS-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/thumb/cS-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/thumb/cS-4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/thumb/cS-5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/thumb/cS-6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/thumb/cS-7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/thumb/cS-8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/img/thumb/cS-9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/demo/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/dist/css/lightslider.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/dist/css/lightslider.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/dist/img/controls.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/dist/js/lightslider.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/dist/js/lightslider.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/lightslider.jquery.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/src/css/lightslider.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/src/img/controls.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/src/js/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/src/js/lightslider.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/test/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/test/lightslider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/lightslider-master/lightslider-master/test/lightslider_test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/nyttigt te-x pm2, mongo mm.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/responsive-calendar-0.9.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/resurser.rtf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resuser/vid installation.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/routes/formRoutes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/routes/indexRouter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/routes/users.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/addTraning.hbs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/home.hbs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/partials/footer.hbs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/savePage.hbs" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/PT.iml" afterPath="$PROJECT_DIR$/.idea/PT.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/iPhone_Home.png" afterPath="$PROJECT_DIR$/public/images/iPhone_Home.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env.json" afterPath="$PROJECT_DIR$/env.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/addHorse.hbs" afterPath="$PROJECT_DIR$/views/addHorse.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/error.hbs" afterPath="$PROJECT_DIR$/views/error.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.hbs" afterPath="$PROJECT_DIR$/views/index.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.hbs" afterPath="$PROJECT_DIR$/views/layout.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layouts/main.hbs" afterPath="$PROJECT_DIR$/views/layouts/main.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/head.hbs" afterPath="$PROJECT_DIR$/views/partials/head.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/header.hbs" afterPath="$PROJECT_DIR$/views/partials/header.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/indexRoutes.js" afterPath="$PROJECT_DIR$/routes/indexRoutes.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -189,13 +25,66 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="pt" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="15">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-924">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="indexRoutes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/indexRoutes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userModel.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/userModel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="112" column="55" selection-start-line="112" selection-start-column="52" selection-end-line="112" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="38" column="49" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="env.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/env.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -216,9 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/templates/msg.hbs" />
-        <option value="$PROJECT_DIR$/public/templates/lib/swiper.hbs" />
-        <option value="$PROJECT_DIR$/public/templates/lib/singelCritt.hbs" />
         <option value="$PROJECT_DIR$/public/templates/addHorseTemplate.hbs" />
         <option value="$PROJECT_DIR$/public/javascripts/btns/addHorseBtn.js" />
         <option value="$PROJECT_DIR$/routes/horseRoutes.js" />
@@ -260,13 +146,16 @@
         <option value="$PROJECT_DIR$/public/javascripts/btns/settingBtns.js" />
         <option value="$PROJECT_DIR$/views/index.hbs" />
         <option value="$PROJECT_DIR$/views/layouts/landingPage.hbs" />
-        <option value="$PROJECT_DIR$/routes/indexRoutes.js" />
         <option value="$PROJECT_DIR$/public/contact.php" />
         <option value="$PROJECT_DIR$/views/main.hbs" />
         <option value="$PROJECT_DIR$/public/bent/script.js" />
         <option value="$PROJECT_DIR$/public/javascripts/lib/addToHomescreen.min.js" />
         <option value="$PROJECT_DIR$/sass/partials/lib/addToHomescree.scss" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/routes/indexRoutes.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/env.json" />
       </list>
     </option>
   </component>
@@ -280,10 +169,20 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="18" />
-    <option name="y" value="65" />
+    <option name="x" value="10" />
+    <option name="y" value="23" />
     <option name="width" value="1430" />
-    <option name="height" value="883" />
+    <option name="height" value="812" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -300,22 +199,42 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="PT" />
+              <option name="myItemId" value="pt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="PT" />
+              <option name="myItemId" value="pt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -387,7 +306,7 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
+      <command value="run-script" />
       <scripts />
       <node-interpreter value="project" />
       <envs />
@@ -430,33 +349,34 @@
       <workItem from="1502834422867" duration="7584000" />
       <workItem from="1503857496121" duration="8040000" />
       <workItem from="1504440032502" duration="48000" />
+      <workItem from="1504440624936" duration="1229000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183781000" />
+    <option name="totallyTimeSpent" value="185010000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="18" y="65" width="1430" height="883" extended-state="0" />
+    <frame x="10" y="23" width="1430" height="812" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21839081" sideWeight="0.75223213" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21788502" sideWeight="0.75223213" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25510204" sideWeight="0.49029127" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36325967" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3625" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21861777" sideWeight="0.24776785" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21390937" sideWeight="0.08130081" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -505,16 +425,13 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/templates/addUserLogg.hbs" />
-    <entry file="file://$PROJECT_DIR$/public/templates/stats.hbs" />
-    <entry file="file://$PROJECT_DIR$/public/javascripts/lib/loginBox" />
     <entry file="file://$PROJECT_DIR$/public/javascripts/lib/login.js" />
     <entry file="file://$PROJECT_DIR$/views/layouts/main.hbs" />
     <entry file="file://$PROJECT_DIR$/views/landingPageBody.hbs" />
     <entry file="file://$PROJECT_DIR$/routes/usersRoutes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -525,13 +442,6 @@
     <entry file="file://$PROJECT_DIR$/public/images/lib/icons/help.png" />
     <entry file="file://$PROJECT_DIR$/public/images/lib/icons/edit.png" />
     <entry file="file://$PROJECT_DIR$/public/templates/user.hbs" />
-    <entry file="file://$PROJECT_DIR$/models/userModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="49" column="15" lean-forward="false" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/lib/dragabilly.js" />
     <entry file="file://$PROJECT_DIR$/public/templates/lib/banskiss.hbs" />
     <entry file="file://$PROJECT_DIR$/public/javascripts/btns/banskiss.js" />
@@ -551,22 +461,9 @@
     <entry file="file://$PROJECT_DIR$/views/index.hbs" />
     <entry file="file://$PROJECT_DIR$/views/partials/header.hbs" />
     <entry file="file://$PROJECT_DIR$/views/partials/head.hbs" />
-    <entry file="file://$USER_HOME$/Desktop/bent/index.html" />
+    <entry file="file://$PROJECT_DIR$/../bent/index.html" />
     <entry file="file://$PROJECT_DIR$/public/bent/bootstrap.min.js" />
-    <entry file="file://$PROJECT_DIR$/creds.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="47" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/indexRoutes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="39" column="46" lean-forward="false" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/creds.js" />
     <entry file="file://$PROJECT_DIR$/public/bent/contact.php" />
     <entry file="file://$PROJECT_DIR$/public/stylesheets/bent/font-awesome.min.css" />
     <entry file="file://$PROJECT_DIR$/views/main.hbs" />
@@ -575,42 +472,54 @@
     <entry file="file://$PROJECT_DIR$/sass/partials/lib/addToHomescreen" />
     <entry file="file://$PROJECT_DIR$/sass/partials/lib/addToHomescree.scss" />
     <entry file="file://$PROJECT_DIR$/sass/partials/buttons.scss" />
-    <entry file="file://$PROJECT_DIR$/pt folder/public/javascripts/btns/addHorseBtn.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="38" column="204" lean-forward="false" selection-start-line="38" selection-start-column="204" selection-end-line="38" selection-end-column="204" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pt folder/public/javascripts/print.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="274" column="35" lean-forward="false" selection-start-line="274" selection-start-column="35" selection-end-line="274" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pt folder/public/templates/showAllHorses.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pt folder/public/javascripts/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="133" column="6" lean-forward="false" selection-start-line="133" selection-start-column="6" selection-end-line="133" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pt folder/public/javascripts/btns/addHorseBtn.js" />
+    <entry file="file://$PROJECT_DIR$/pt folder/public/javascripts/print.js" />
+    <entry file="file://$PROJECT_DIR$/pt folder/public/templates/showAllHorses.hbs" />
+    <entry file="file://$PROJECT_DIR$/pt folder/public/javascripts/main.js" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="15">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-924">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/indexRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/userModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="112" column="55" selection-start-line="112" selection-start-column="52" selection-end-line="112" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="38" column="49" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
           <folding />
         </state>
       </provider>

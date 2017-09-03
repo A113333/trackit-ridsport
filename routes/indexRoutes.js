@@ -23,23 +23,15 @@ router.isLoggedIn = function isLoggedIn(req, res, next) {
   return next();
   };
 
-router.get('/', function (req, res, next) {
 
-    res.render('index.hbs');
-  });
-
-router.get("/ridsport", function(req, res, next) {
+router.get("/", function(req, res, next) {
 
   res.render("main", { title: 'my other page', layout: 'landingPage' })
 });
 // ----------------------------Locals----------------------------------------
 // ----------------------------Locals----------------------------------------
 
-router.get('/login', function (req, res, next) {
 
-    // render the page and pass in any flash data if it exists
-    res.render('login.hbs', { message: req.flash('loginMessage') });
-  });
 
 router.post('/login', passport.authenticate('local-login', {
     successRedirect: '/home#cal', // redirect to the secure profile section

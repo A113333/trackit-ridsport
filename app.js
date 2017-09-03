@@ -22,17 +22,13 @@ const debug = require('debug')('PT');
 const name = 'pt';
 debug('booting %s', name);
 
-//indexRoutes.js C:\Users\Alle\WebstormProjects\PT\pt folder\routes\indexRoutes.js
-//var api = require('./routes/api');
-
 
 var index = require('./routes/indexRoutes');
-var users = require('./routes/usersRoutes');
-var horses = require("./routes/horseRoutes");
-
 var app = express();
 
-mongoose.connect('mongodb://localhost/pt', function(err,db){
+
+
+mongoose.connect('mongodb://127.0.0.1/pt', function(err,db){
     if (!err){
         console.log('Mongo Connected to db PT!');
     } else{
@@ -89,8 +85,6 @@ app.use('/hbs', express.static(__dirname + '/node_modules/handlebars/dist/'));
 
 
 app.use('/', index);
-app.use('/user', users);
-app.use('/horses', horses);
 
 
 var Account = require('./models/accountModel.js');
