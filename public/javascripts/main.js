@@ -9,6 +9,9 @@ require('rangeslider.js');
 require('../../node_modules/jquery-validation/dist/jquery.validate.js');
 require('../../node_modules/lightslider/dist/js/lightslider.min.js');
 var refs = require("../../creds");
+// för variablar som är beroende av prossec.env
+var common = require('../../common.js');
+var appConfig = common.config();
 
 
 //var Backbone = require('backbone');
@@ -77,8 +80,33 @@ $(window).load(function() {
 
 
 $(document).ready(function () {
-  window.scrollTo(0,0)
+  window.scrollTo(0,0);
   console.log(window.location.hash);
+
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : appConfig.facebook_app_id,
+      cookie     : true,
+      xfbml      : true,
+      version    : '{latest-api-version}'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+    console.log("fb inti runs");
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "http//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+    console.log(response)
+  });
 
   if (window.location.pathname == '/') {
       console.log('window path /');

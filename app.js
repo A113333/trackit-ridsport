@@ -8,7 +8,6 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var flash    = require('connect-flash');
 const session = require('express-session');
-const RedisStore = require('connect-redis')(session);
 //loading process env
 process.env.NODE_ENV = "production";
 
@@ -25,6 +24,7 @@ debug('booting %s', name);
 
 
 var index = require('./routes/indexRoutes');
+var users = require('./routes/usersRoutes');
 var app = express();
 
 
@@ -83,6 +83,7 @@ app.use('/hbs', express.static(__dirname + '/node_modules/handlebars/dist/'));
 
 
 app.use('/', index);
+app.use('/user', users);
 
 
 var Account = require('./models/accountModel.js');
