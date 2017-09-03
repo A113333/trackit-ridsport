@@ -1,12 +1,11 @@
 
 var express = require('express');
 var router = express.Router();
-var userController = require('../controllers/userController.js');
 var mongoose = require('mongoose');
 ObjectId = mongoose.ObjectID;
 
 var User = require('../models/userModel.js');
-var Traning = require('../models/userModel.js');
+
 
 router.get("/", function(req, res, next) {
 

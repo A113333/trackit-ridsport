@@ -8,9 +8,10 @@ var common = require('../common.js');
 var config = common.config();
 var express = require('express');
 var router = express.Router();
-var horseController = require('../controllers/horseController.js');
 var User = require('../models/userModel.js');
 var passport = require('passport');
+
+//var fbCallback = common.facebook_app_callback;
 
 router.isLoggedIn = function isLoggedIn(req, res, next) {
 
