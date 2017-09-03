@@ -8,9 +8,10 @@ var common = require('../common.js');
 var config = common.config();
 var express = require('express');
 var router = express.Router();
-var horseController = require('../controllers/horseController.js');
 var User = require('../models/userModel.js');
 var passport = require('passport');
+
+//var fbCallback = common.facebook_app_callback;
 
 router.isLoggedIn = function isLoggedIn(req, res, next) {
 
@@ -23,7 +24,10 @@ router.isLoggedIn = function isLoggedIn(req, res, next) {
   return next();
   };
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54e79f37ec08a8b2b62c47781bcdadeb261307de
 
 router.get("/", function(req, res, next) {
 
@@ -32,11 +36,7 @@ router.get("/", function(req, res, next) {
 // ----------------------------Locals----------------------------------------
 // ----------------------------Locals----------------------------------------
 
-router.get('/login', function (req, res, next) {
 
-    // render the page and pass in any flash data if it exists
-    res.render('login.hbs', { message: req.flash('loginMessage') });
-  });
 
 router.post('/login', passport.authenticate('local-login', {
     successRedirect: '/home#cal', // redirect to the secure profile section
@@ -73,7 +73,6 @@ router.get('/logout', function (req, res, next) {
 // profile gets us their basic information including their name
 // email gets their emails
 router.get('/auth/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
-
 // the callback after google has authenticated the user
 router.get('/auth/google/callback',
     passport.authenticate('google', {

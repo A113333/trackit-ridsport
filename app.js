@@ -7,9 +7,10 @@ var logger = require('morgan');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var flash    = require('connect-flash');
-
+const session = require('express-session');
+const RedisStore = require('connect-redis')(session);
 //loading process env
-process.env.NODE_ENV = process.env.NODE_ENV || "development";
+process.env.NODE_ENV = "production";
 
 
 
@@ -22,17 +23,13 @@ const debug = require('debug')('PT');
 const name = 'pt';
 debug('booting %s', name);
 
-//indexRoutes.js C:\Users\Alle\WebstormProjects\PT\pt folder\routes\indexRoutes.js
-//var api = require('./routes/api');
-
 
 var index = require('./routes/indexRoutes');
-var users = require('./routes/usersRoutes');
-var horses = require("./routes/horseRoutes");
-
 var app = express();
 
-mongoose.connect('mongodb://localhost/pt', function(err,db){
+
+
+mongoose.connect('mongodb://127.0.0.1/pt', function(err,db){
     if (!err){
         console.log('Mongo Connected to db PT!');
     } else{
@@ -60,11 +57,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //var csrfProtection = csrf({ cookie: true });
 app.use(cookieParser());
 
-app.use(require('express-session')({
-    secret: 'allespt',
-    resave: false,
-    saveUninitialized: false
-}));
+
+
 
 
 app.use(passport.initialize());
@@ -89,8 +83,6 @@ app.use('/hbs', express.static(__dirname + '/node_modules/handlebars/dist/'));
 
 
 app.use('/', index);
-app.use('/user', users);
-app.use('/horses', horses);
 
 
 var Account = require('./models/accountModel.js');
